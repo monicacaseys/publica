@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    
+    gap:30px 60px;
+}
+
+.cajas {
+    align-items: baseline;
+    flex-direction: row;
+    text-align: center;
+    padding: 40px;
+    width: 100px;
+    height: 75px;
+}
+
+#rojo {
+    background-color: red;
+    order: 2;
+
+}
+
+#verde {
+    background-color: green;
+    order: 3;
+}
+
+#azul {
+    background-color: blue;
+    order: 1;
+    
+
+}
