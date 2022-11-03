@@ -8,7 +8,6 @@ h2 {
 #contenedor {
     display: flex;
     flex-direction: column;
-    
     gap:30px 60px;
 }
 

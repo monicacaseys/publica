@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px 60px;
+
+        }
+
+        .cajas {
+            align-items: baseline;
+            flex-direction: column;
+            text-align: center;
+            padding: 40px;
+            width: 100px;
+            height: 75px;
+        }
+
+        #rojo {
+            background-color: red;
+            order: 2;
+
+        }
+
+        #verde {
+            background-color: green;
+            order: 3;
+        }
+
+        #azul {
+            background-color: blue;
+            order: 1;
+
+
+        }
+
+        #orange {
+            background-color: orange;
+           align-self: center;
+        }
+
+        #violet {
+            background-color: violet;
+            align-items: center;
+
+        }
+
+        .grande {
+            flex-direction: row;
+            display: flex;
+            gap: 30px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CAJAS -PASO 1</h1>
+    <div class="grande">
+        <section id="contenedor">
+            <div class="cajas" id="rojo">
+                <h2>Rojo</h2>
+            </div>
+            <div class="cajas" id="verde">
+                <h2>Verde</h2>
+            </div>
+            <div class="cajas" id="azul">
+                <h2>Azul</h2>
+
+            </div>
+        </section>
+        <section id="contenedor">
+            <div class="cajas" id="orange">
+                <h2>orange</h2>
+            </div>
+        </section>
+        <section id="contenedor">
+            <div class="cajas" id="violet">
+                <h2>violet</h2>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
