@@ -1,9 +1,10 @@
-body{
+body {
     background-color: azure;
 }
-li{
-    display:inline-block;
-    width:200px;
+
+li {
+    display: inline-block;
+    width: 200px;
     height: 2em;
     background-color: black;
     border-radius: 5px;
@@ -16,38 +17,48 @@ li{
     font-size: xx-large;
     box-shadow: 2px 2px darkblue;
 }
-nav{
+
+nav {
     background-color: aquamarine;
 }
-#seleccionado{
+
+#seleccionado {
     box-shadow: 2px 2px darkblue;
 }
-li#seleccionado{
+
+li#seleccionado {
     background-color: cadetblue;
 }
-@media screen and (max-width:800px) {
+
+@media screen and (max-width: 800px) {
+
     /*estos estilos solo se aplican a viewports de hasta 800px de ancho*/
     body {
         background-color: rgb(223, 223, 64);
     }
-    
+
 }
+
 @media screen and (orientation:portrait) {
+
     /*estos estilos solo se aplican a movil*/
     body {
-        background-color:black;
+        background-color: black;
     }
-    *{
+
+    * {
         color: white;
     }
-@media screem and (max-width:900px){
-        li{
+
+    @media screem and (max-width:900px) {
+        li {
             width: 100px;
         }
     }
-@media screem and (max-width:600px){
-    li{
-        width: 50px;
+
+    @media screem and (max-width:600px) {
+        li {
+            width: 50px;
+        }
     }
-}
 }
