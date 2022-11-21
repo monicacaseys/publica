@@ -50,13 +50,13 @@ li#seleccionado {
         color: white;
     }
 
-    @media screem and (max-width:900px) {
+    @media screen and (max-width:900px) {
         li {
             width: 100px;
         }
     }
 
-    @media screem and (max-width:600px) {
+    @media screen and (max-width:600px) {
         li {
             width: 50px;
         }
