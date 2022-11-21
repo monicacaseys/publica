@@ -1,7 +1,10 @@
+body{
+    background-color: azure;
+}
 li{
     display:inline-block;
-    width:5%;
-    height: 5vh;
+    width:200px;
+    height: 2em;
     background-color: black;
     border-radius: 5px;
     margin: 5px;
@@ -21,4 +24,30 @@ nav{
 }
 li#seleccionado{
     background-color: cadetblue;
+}
+@media screen and (max-width:800px) {
+    /*estos estilos solo se aplican a viewports de hasta 800px de ancho*/
+    body {
+        background-color: rgb(223, 223, 64);
+    }
+    
+}
+@media screen and (orientation:portrait) {
+    /*estos estilos solo se aplican a movil*/
+    body {
+        background-color:black;
+    }
+    *{
+        color: white;
+    }
+@media screem and (max-width:900px){
+        li{
+            width: 100px;
+        }
+    }
+@media screem and (max-width:600px){
+    li{
+        width: 50px;
+    }
+}
 }
