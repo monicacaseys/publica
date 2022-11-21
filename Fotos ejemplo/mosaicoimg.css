@@ -45,9 +45,9 @@
 }
 
 #fotosuperiorderch {
-    transform: scaleY(-1);
+    transform: scalex(-1);
 }
 
 #fotoinferiorderch{
-    transform: scaleY(-1);
+    transform: scale(-1);
 }
