@@ -1,7 +1,10 @@
 body {
     background-color: azure;
 }
-
+ul {
+    justify-content:space-around;
+    align-items: center;   
+}
 li {
     display: inline-block;
     width: 200px;
@@ -17,11 +20,14 @@ li {
     font-size: xx-large;
     box-shadow: 2px 2px darkblue;
 }
-#barra{
-    flex-direction: column;
-}
+
 nav {
     background-color: aquamarine;
+    flex-direction: column;
+    height: 550px;
+    width: 220px;
+    border: 3px solid rebeccapurple;
+    float: left;
 }
 
 #seleccionado {
