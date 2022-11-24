@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,19 @@
     <title>Pag.3</title>
     <link href="./estilo.css" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <ul>
-            <a href="./pag1.html"><li>1</li></a>
-            <a href="./pag2.html"><li>2</li></a>
-            <a href="./pag3.html"><li id="seleccionado">3</li></a>
+            <a href="./pag1.html">
+                <li>1</li>
+            </a>
+            <a href="./pag2.html">
+                <li>2</li>
+            </a>
+            <a href="./pag3.html">
+                <li id="seleccionado">3</li>
+            </a>
         </ul>
     </nav>
     <header>
@@ -20,15 +28,50 @@
         <h2>Solo queria mostarte mi cara en gato</h2>
         <div class="foto">
             <picture class="portafoto">
-        <!----IMAGENES GRANDES----->
-        <!---IMAGENES MEDIANAS-->
-        <source  alt="Cara primer plano gato" title="gato cara de no entender nada" src="gato-M-H.avif" type="image/avif">
-        <source  alt="Cara primer plano gato" title="gato cara de no entender nada" src="gato-M-H.jpg.jpg" type="image/jpg">
-        <source  alt="Cara primer plano gato" title="gato cara de no entender nada" src="gato-M-H.webp.webp" type="image/webp">
-        <!---<source media="(orientation: landscape) and (min-width:90px)" src="gato-M-H.avif" type="image/avif">-->
-        <!---IMAGENES PEQUEÑAS-->
+                <!-- imágenes GRANDES -->
+                <!-- horizontales: mostraremos la grande cuando la mediana no fuera suficiente, o sea más de 1200 de ancho.
+        verticales: el mismo criterio, o sea más de 600 de ancho. -->
+
+                <source media="(orientation: landscape) and (min-width: 1201px)" src="./gato-G-H.avif"
+                    type="image/avif">
+                <source media="(orientation: landscape) and (min-width: 1201px)" src="./gato-G-H.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 1201px)" src="./gato-G-H.jpg"
+                    type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width:601px)" src="./gato-G-V.avif" type="image/avif">
+                <source media="(orientation: portrait) and (min-width:601px)" src="./gato-G-V.webp"
+                    type="image/webp">
+                <source media="(orientation: portrait) and (min-width:601px)" src="./gato-G-V.jpg" type="image/jpg">
+
+                <!-- imágenes MEDIANAS -->
+                <!-- horizontales: mostraremos la grande cuando la pequeña no fuera suficiente, o sea más de 900 de ancho.
+verticales: el mismo criterio, o sea más de 400 de ancho. -->
+                <source media="(orientation: landscape) and (min-width: 901px)" src="./gato-M-H.avif" type="image/avif">
+                <source media="(orientation: landscape) and (min-width: 901px)" src="./gato-M-H.webp"type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 901px)" src="./gato-M-H.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width:401px)" src="./gato-M-V.avif" type="image/avif">
+                <source media="(orientation: portrait) and (min-width:401px)" src="./gato-M-V.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width:401px)" src="./gato-M-V.jpg" type="image/jpg">
+
+                <!-- imágenes PEQUEÑAS -->
+                <!-- en ambos casos, las usaremos cuando su ancho sea menor que su ancho máximo, para que no pixele
+al ajustarse al portarretratos -->
+
+                <source media="(orientation: landscape) and (max-width: 900px)" src="./gato-P-H.avif" type="image/avif">
+                <source media="(orientation: landscape) and (max-width: 900px)" src="./gato-P-H.webp"
+                    type="image/webp">
+                <source media="(orientation: landscape) and (max-width: 900px)" src="./gato-P-H.jpg"
+                    type="image/jpeg">
+                <source media="(orientation: portrait) and (max-width: 400px)" src="./gato-P-V.avif" type="image/avif">
+                <source media="(orientation: portrait) and (max-width: 400px)" src="./gato-P-V.webp"
+                    type="image/webp">
+                <source media="(orientation: portrait) and (max-width: 400px)" src="./gato-P-V.jpg"
+                    type="image/jpg">
+
+                <img class="laFoto" alt="Foto de un Gato" title="Gato cara de asco" src="./gato-original.jpg" />
             </picture>
         </div>
     </header>
 </body>
+
 </html>

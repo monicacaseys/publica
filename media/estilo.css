@@ -17,7 +17,9 @@ li {
     font-size: xx-large;
     box-shadow: 2px 2px darkblue;
 }
-
+#barra{
+    flex-direction: column;
+}
 nav {
     background-color: aquamarine;
 }
@@ -29,7 +31,53 @@ nav {
 li#seleccionado {
     background-color: cadetblue;
 }
+.fotoPag1 {
+        width: 20%;
+        min-width: 150px;
+        height: auto;
+    }
+article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
+p{
+    column-count: 3;
+}
+#pa1 {
+    color: blue;
+}
+#pa2 {
+    color: rgb(255, 0, 234);
+    column-count: 1;
+}
+#pa3 {
+    color: rgb(255, 251, 0);
+}
+main {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+}
+.fotoSilencio {
+width: 30%;
+float: right;
+padding: 5px;
+}
+.portaFoto {
+    width: 50vw;
+    height: 50vh;
+    background-color: lightpink;
+    display: block;
+}
+
+.laFoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 @media screen and (max-width: 800px) {
 
     /*estos estilos solo se aplican a viewports de hasta 800px de ancho*/
@@ -61,4 +109,15 @@ li#seleccionado {
             width: 50px;
         }
     }
+    .portaFoto {
+        max-width: 800px;
+        max-height: 1200px;
+    }
 }
+@media screen and (orientation:landscape){
+    .portaFoto {
+        max-width: 1920px;
+        max-height: 1280px;
+    }
+}
+
