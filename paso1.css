@@ -1,0 +1,67 @@
+body {
+    background-color: gray;
+}
+
+p {
+    line-height: 12px;
+}
+
+div {
+    line-height: 36px;
+}
+
+#oferta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#oferta p {
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ver {
+    display: block;
+}
+
+#ocultar {
+    display: none;
+}
+p:hover { /* para seleccionar cuando se pasa el raton por encima*/
+    color: rgb(231, 16, 195);
+    background-color:rgb(7, 42, 196);
+}
+p::first-letter { /* para poner en grand la primera etra de cada parrafo */
+    color: brown;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+}
+div:hover { /* para seleccionar cuando se pasa el raton por encima*/
+    color: rgb(16, 102, 231);
+    background-color:rgb(196, 92, 7);
+    font-size: 120%; /* para seleccionar cuando se pasa el raton por encima se pone la letrra mas grande*/
+}
+
+body>p:nth-child(2){
+    visibility: hidden;
+}
+
+body>p:target {
+    visibility: visible;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
