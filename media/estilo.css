@@ -7,6 +7,7 @@ header{
     width: 100%;
     display:inline-flex;
     z-index: 100;
+    
 }
 ul {
    justify-content: space-around; 
@@ -26,7 +27,7 @@ li {
     padding-top: 1vh;
     font-size: xx-large;
     box-shadow: 2px 2px darkblue;
-    
+    Font-family: Consolas, monaco, monospace;
 }
 
 nav {
