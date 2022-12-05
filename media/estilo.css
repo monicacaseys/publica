@@ -1,20 +1,21 @@
 body {
     background-color: azure;
+    
 }
 header{
     background: red;
     width: 100%;
-    position: fixed;
+    display:inline-flex;
     z-index: 100;
 }
 ul {
-    justify-content:space-around;
-    align-items: center;   
+   justify-content: space-around; 
+    display: flex;
 }
 li {
     display: inline-block;
-    width: 200px;
-    height: 2em;
+    width: 150%;
+    height: 1.5em;
     background-color: black;
     border-radius: 5px;
     margin: 5px;
@@ -25,15 +26,21 @@ li {
     padding-top: 1vh;
     font-size: xx-large;
     box-shadow: 2px 2px darkblue;
+    
 }
 
 nav {
-    background-color: aquamarine;
+    background-color: cadetblue;
     display: block;
-    height: 150px;
-    width: 520px;
+    height: 100px;
+    width: 100%;
     border: 3px solid rebeccapurple;
- 
+    
+}
+.idGrande{
+    display: flex;
+    height: 50%;
+    
 }
 
 #seleccionado {
@@ -48,36 +55,21 @@ li#seleccionado {
         min-width: 150px;
         height: auto;
     }
-article {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
 
-p{
-    column-count: 3;
-}
+
 #pa1 {
     color: blue;
 }
 #pa2 {
     color: rgb(255, 0, 234);
-    column-count: 1;
+   
 }
 #pa3 {
     color: rgb(255, 251, 0);
 }
-main {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 30%;
-}
-.fotoSilencio {
-width: 30%;
-float: right;
-padding: 5px;
-}
+
+
+
 .portaFoto {
     width: 50vw;
     height: 50vh;
