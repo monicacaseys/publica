@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1 class="efecto">
-            <<<<<<<< WARNING>>>>>>>
+            DESVELAMOS EL SECRETO
         </h1>
         <div>
             <figcaption>sabemos donde esta dan cooper</figcaption>
@@ -25,14 +25,59 @@
     </nav>
    <div>
     <h1>¿Donde esta Dan Cooper?</h1>
-    <h2>Pero.... primero ¿quien es dan cooper?</h2>
+   </div>
+   <div id="containerMedio">
+    <div id="izq2"> 
+        <h2>Pero.... primero ¿quien es dan cooper?</h2>
+    </div>
+    <div id="dech2">
+<!-- aquí van los dos botones que usaré para mostrar u ocultar la oferta -->
+<input id="ver" type="button" onclick="mostrar()" value="+ INFO" />
+<input id="ocultar" type="button" onclick="ocultar()" value="OCULTAR" />
+
+<div id="oferta1">
+    <h1 id="h1">Dan Cooper ¿es una persona?</h1>
+    <h2 id="h2"> En pocas palabras...</h2>
     <p>D. B. Cooper es el nombre atribuido a un hombre que secuestró un avión Boeing 727 en los Estados Unidos el 24 de noviembre de 1971. </p>
-    <p> recibió un rescate de 200 000 USD y saltó en paracaídas desde la aeronave. </p>
+    <p>Recibió un rescate de 200 000 USD y saltó en paracaídas desde la aeronave. </p>
     <p>El nombre que el secuestrador usó para abordar el avión fue Dan Cooper. Sin embargo, las iniciales «D. B.» se asociaron permanentemente</p>
     <p>con el secuestrador debido a un error de comunicación con la prensa, que tuvo conocimiento de que poco después del secuestro el FBI había </p>
     <p>interrogado a un hombre de Portland llamado D. B. Cooper, quien nunca fue considerado un sospechoso importante.</p>
-    <p>La forma en la que Cooper escapó de la justicia así como la incertidumbre sobre su paradero continúan intrigando al público. El caso de Cooper,</p>
-    <p> cuyo código es «Norjak» en el FBI, es el único caso de piratería aérea sin resolver en los Estados Unidos</p>
+    <p>La forma en la que Cooper escapó de la justicia así como la incertidumbre sobre su paradero continúan intrigando al público. </p>
+    <p>El caso de Cooper, cuyo código es «Norjak» en el FBI, es el único caso de piratería aérea sin resolver en los Estados Unidos</p>
+</div>
+<script>
+    function ocultar() {
+        /* oculto la oferta */
+        document.getElementById("oferta1").style.display = "none";
+
+        /* muestro el botón para volver a ver la oferta */
+        document.getElementById("ver").style.display = "inline-block";
+
+        /* oculto este botón */
+        document.getElementById("ocultar").style.display = "none";
+
+        return;
+    }
+
+    function mostrar() {
+        document.getElementById("oferta1").style.display = "table";
+
+        /* muestro el botón para ocultar la oferta */
+        document.getElementById("ocultar").style.display = "inline-block";
+
+        /* oculto este botón */
+        document.getElementById("ver").style.display = "none";
+
+        return;
+    }
+
+
+</script>
+    </div>
    </div>
+   <footer id="footerAvion">
+    <p>SI QUIERES SABER MAS PULSA ARRIBA EL 3 </p>
+   </footer>
 </body>
 </html>
