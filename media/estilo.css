@@ -1,21 +1,27 @@
-*{
+* {
     padding: 0%;
 }
+
 body {
     background-color: azure;
-    
+
 }
-header{
+
+header {
     background: royalblue;
     width: 100%;
-    display:inline-flex;
+    display: inline-flex;
     z-index: 100;
-    
+    justify-content: center;
+}
+figcaption{
+    color:greenyellow;
 }
 ul {
-   justify-content: space-around; 
+    justify-content: space-around;
     display: flex;
 }
+
 li {
     display: inline-block;
     background-color: black;
@@ -28,9 +34,9 @@ li {
     padding-top: 1vh;
     font-size: 30px;
     box-shadow: 2px 2px darkblue;
-    font-family:fantasy;
-    width: 1.7em; 
-    height: 1.7em; 
+    font-family: fantasy;
+    width: 1.7em;
+    height: 1.7em;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -44,37 +50,44 @@ nav {
     height: 100px;
     width: 100%;
     border: 4px solid royalblue;
-    
+
 }
-#containerP1{
-    height:300px;
+
+#containerP1 {
+    height: 300px;
     width: 100%;
-    
+
 }
 
 #izq {
     height: 100%;
     width: 47%;
     background: blue;
-    overflow:visible;
+    overflow: visible;
     display: inline-block;
 }
-#izq:hover { /* para seleccionar cuando se pasa el raton por encima*/
-    
-    background-color:rgb(97, 233, 172);
+
+#izq:hover {
+    /* para seleccionar cuando se pasa el raton por encima*/
+
+    background-color: rgb(97, 233, 172);
 }
+
 #dech {
     height: 90%;
     width: 47%;
     background: rgb(35, 35, 111);
     display: inline-block;
 }
-#dech:hover { /* para seleccionar cuando se pasa el raton por encima*/
- 
-    background-color:rgb(7, 42, 196);
+
+#dech:hover {
+    /* para seleccionar cuando se pasa el raton por encima*/
+
+    background-color: rgb(7, 42, 196);
 }
-#containerMedio{
-    height:200px;
+
+#containerMedio {
+    height: 200px;
     width: 100%;
 }
 
@@ -85,84 +98,96 @@ nav {
 li#seleccionado {
     background-color: rgb(98, 102, 104);
 }
+
 .fotoPag1 {
-        width: 20%;
-        min-width: 150px;
-        height: auto;
-    }
+    width: 20%;
+    min-width: 150px;
+    height: auto;
+}
 
 
 #pa1 {
     color: blue;
     font-size: xx-large;
 }
+
 #pa2 {
     color: rgb(255, 0, 234);
     font-size: xx-large;
     text-align: center;
     font-family: fantasy;
-    
+
 }
-#pa{
+
+#pa {
     color: rgb(5, 145, 10);
-    font-size:50px;
+    font-size: 50px;
     text-align: center;
     font-family: fantasy;
 }
-#pa:hover { /* para seleccionar cuando se pasa el raton por encima*/
+
+#pa:hover {
+    /* para seleccionar cuando se pasa el raton por encima*/
     color: rgb(231, 16, 195);
-    background-color:rgb(7, 42, 196);
+    background-color: rgb(7, 42, 196);
 }
+
 #pa301 {
     color: rgb(255, 251, 0);
     font-size: 30px;
     text-align: center;
-    font-family:monospace;
+    font-family: monospace;
 }
+
 #pa3 {
     color: rgb(255, 251, 0);
     font-size: 30px;
     text-align: center;
-    font-family:monospace;
+    font-family: monospace;
 }
-#pa3:hover { /* para seleccionar cuando se pasa el raton por encima*/
-  color:rgb(243, 8, 8);
+
+#pa3:hover {
+    /* para seleccionar cuando se pasa el raton por encima*/
+    color: rgb(243, 8, 8);
     font-size: 100px;
-    font-family:monospace;
+    font-family: monospace;
 }
-footer{
-    color:blue;
-    font-size:30px;
-    text-align:center;  
+
+footer {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
     background-color: rgb(91, 93, 110);
     display: block;
     height: 100px;
     width: 30%;
     border: 60px dotted rebeccapurple;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
-#footerGato{
-    color:yellow;
-    font-size:40px;
-    text-align:center;  
+
+#footerGato {
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
     background-color: rgba(57, 74, 232, 0.545);
     display: block;
     height: auto;
     width: auto;
     border: 30px dotted rebeccapurple;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#footerAvion{
-    color:rgba(10, 10, 3, 0.595);
-    font-size:30px;
-    text-align:center;  
+
+#footerAvion {
+    color: rgba(10, 10, 3, 0.595);
+    font-size: 30px;
+    text-align: center;
     background-color: rgba(239, 140, 227, 0.41);
     display: block;
     height: auto;
     width: auto;
     border: 10px dashed rgba(102, 51, 153, 0.453);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -210,17 +235,20 @@ footer{
             width: 50px;
         }
     }
+
     .portaFoto {
         max-width: 800px;
         max-height: 1200px;
     }
 }
-@media screen and (orientation:landscape){
+
+@media screen and (orientation:landscape) {
     .portaFoto {
         max-width: 1920px;
         max-height: 1280px;
     }
 }
+
 #oferta {
     position: absolute;
     top: 0;
@@ -234,30 +262,58 @@ footer{
     z-index: 1;
     display: none;
 }
+
 #oferta1 {
     position: absolute;
-   
+
     width: 80%;
     height: 80%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.933);
-    
+
 }
-#izq2,#dech2{
+
+#izq2,
+#dech2 {
     display: inline-block;
 }
-#h1,#h2 {
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #FCDB00;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    font-size: 40px;
+    letter-spacing: 12px;
+}
+
+#h2 {
+    margin: 5px;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
+}
+
+#h1 {
+    text-align:left;
+    font-size: 30px;
     padding-left: 2%;
     font-family: cursive;
     color: cornflowerblue;
+    letter-spacing: 2px;
 }
+
 #oferta1 p {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: rgb(2, 2, 21);
-   padding-left: 3%;
+    padding-left: 3%;
     text-align: left;
-    
+
 }
+
 #oferta p {
     display: table-cell;
     color: blue;
