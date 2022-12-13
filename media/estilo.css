@@ -13,10 +13,9 @@ header {
     display: inline-flex;
     z-index: 100;
     justify-content: center;
+
 }
-figcaption{
-    color:greenyellow;
-}
+
 ul {
     justify-content: space-around;
     display: flex;
@@ -105,7 +104,14 @@ li#seleccionado {
     height: auto;
 }
 
-
+#parrafo{
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+    font-size: calc(6px + 1vw + 1vh);
+    overflow: auto;
+}
 #pa1 {
     color: blue;
     font-size: xx-large;
@@ -281,24 +287,24 @@ footer {
 h1 {
     text-align: center;
     font-size: 40px;
+    /* COLOR AMARILLO*/
     color: #FCDB00;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-    font-size: 40px;
     letter-spacing: 12px;
 }
 
 #h2 {
     margin: 5px;
     color: #fff;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0;
     text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
 }
 
 #h1 {
-    text-align:left;
+    text-align: left;
     font-size: 30px;
     padding-left: 2%;
     font-family: cursive;
@@ -335,28 +341,95 @@ h1 {
 }
 
 .efecto {
+    /* NEON */
+    letter-spacing: -2px;
+    color: rgb(221, 211, 211);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f2071f, 0 0 25px #ef2222;
+    -webkit-text-fill-color: #f5ee36;
+    -webkit-text-stroke-color: #090908;
+    -webkit-text-stroke-width: 0.2px;
+font-size: 45px;
+    -webkit-animation-name: flash;
+    animation-name: flash;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+
+}
+
+@-webkit-keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+
+    }
+}
+
+@keyframes flash {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+        color: red;
+
+    }
+}
+
+figcaption {
+
+    color: #FCDB00;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-   }
-   @-webkit-keyframes flash {
-    0%, 50%, 100% {
-    opacity: 1;
-    }
-   25%, 75% {
-    opacity: 0;
-    }
-   }
-   @keyframes flash {
-    0%, 50%, 100% {
-    opacity: 1;
-    }
-   25%, 75% {
-    opacity: 0;
-    }
-   }
-   .flash {
     -webkit-animation-name: flash;
-    animation-name: flash;
-   }
+    animation-name: flash2;
+}
+
+@-webkit-keyframes flash2 {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash2 {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
