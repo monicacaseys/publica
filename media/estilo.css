@@ -386,7 +386,6 @@ font-size: 45px;
     25%,
     75% {
         opacity: 0;
-        color: red;
 
     }
 }
