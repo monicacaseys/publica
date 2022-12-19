@@ -51,7 +51,7 @@ p{
  font-weight: bold;
 }
 p:nth-child(2){
-    font-size: calc(1.2em+1vw+1hw);
+    font-size: calc(1.2em+1vw+1vh);
     font-style:oblique;
     color: whitesmoke;
     text-shadow: 2px 1px 0px red;
@@ -64,6 +64,6 @@ div:active,div:hover{
 @media all and (orientation:landscape){
     img,div{
         width: 70vh;
-        margin-left: calc(50vw-35hw);
+        margin-left: calc(50vw - 35vh);
     }
 }
