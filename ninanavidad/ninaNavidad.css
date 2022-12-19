@@ -59,7 +59,7 @@ p:nth-child(2){
 }
 div:active,div:hover{
     opacity: 1;
-    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, 0.542);
 }
 @media all and (orientation:landscape){
     img,div{
