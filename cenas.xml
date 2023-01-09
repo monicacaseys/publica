@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dinner>
+<meal>
+<name> Plato de quesode tetilla</name>
+<price>15.00€</price>
+<categoria>Entrante</categoria>
+</meal>
+
+<meal>
+<name>Ensaladilla</name>
+<price>9.00€</price>
+<ingredients>
+<ingredients>Patata</ingredients>
+<ingredients>Zanahoria</ingredients>
+<ingredients>Atun</ingredients>
+<ingredients>Aceitunas</ingredients>
+<ingredients>Mayonesa</ingredients>
+</ingredients>
+<categoria>Primero</categoria>
+</meal>
+
+<meal>
+<name>Sepia</name>
+<price>25.00€</price>
+<ingredients>
+<ingredients>Sepia de Valencia</ingredients>
+<ingredients>All i oli</ingredients>
+<ingredients></ingredients>
+</ingredients>
+<opciones> al punto | tostado </opciones>
+<categoria>Principal</categoria>
+<temportada></temportada>
+</meal>
+</dinner>
