@@ -5,7 +5,7 @@
     <autor>Fito y Fitipaldis</autor>
     <letra>
         <estrofa tipo="normal">
-            <verso>Él camina despacito que las prisas no son buenas</verso>
+            <orden>5</orden><verso>Él camina despacito que las prisas no son buenas</verso>
             <verso>En su brazo dobladita, con cuidado la chaqueta</verso>
             <verso>Luego pasa por la calle dónde los chavales juegan</verso>
             <verso>Él también quiso ser niño pero le pilló la guerra</verso>
