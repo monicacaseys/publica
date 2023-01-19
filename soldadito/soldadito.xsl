@@ -13,10 +13,22 @@
       <xsl:when test="tipo='estribillo'">
        <p>ESTRIBILLO</p>
        <div class="estribillo">
+        <xsl:for-each select="verso">
+       <p>
+          <xsl:value-of select="."/>
+       </p>
+         </xsl:for-each>
+        </div>
       </xsl:when>
       <xsl:otherwise>
        <p>(estrofa normal)</p>
        <div>
+        <xsl:for-each select="verso">
+       <p>
+          <xsl:value-of select="."/>
+       </p>
+         </xsl:for-each>
+        </div>
       </xsl:otherwise>
      </xsl:choose>
      <xsl:sort select="orden"/>
@@ -27,7 +39,9 @@
        </p>
          </xsl:for-each>
      </div>
-        </xsl:for-each>
+(Autor </xsl:for-each>)
+    <p>
+     <xsl:value=
    </body>
   </html>
  </xsl:template>
