@@ -9,6 +9,14 @@
             <xsl:value-of select="cancion/titulo"/>
     </h2>
     <xsl:for-each select="cancion/letra/estrofa">
+     <xsl:choose>
+      <xsl:when test="tipo='estribillo'">
+       <p>ESTRIBILLO</p>
+      </xsl:when>
+      <xsl:otherwise>
+       <p>(estrofa normal)</p>
+      </xsl:otherwise>
+     </xsl:choose>
      <xsl:sort select="orden"/>
      <div>
       <xsl:for-each select="verso">
