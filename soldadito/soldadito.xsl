@@ -12,13 +12,15 @@
      <xsl:choose>
       <xsl:when test="tipo='estribillo'">
        <p>ESTRIBILLO</p>
+       <div class="estribillo">
       </xsl:when>
       <xsl:otherwise>
        <p>(estrofa normal)</p>
+       <div>
       </xsl:otherwise>
      </xsl:choose>
      <xsl:sort select="orden"/>
-     <div>
+   <div>
       <xsl:for-each select="verso">
        <p>
           <xsl:value-of select="."/>
