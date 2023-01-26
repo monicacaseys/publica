@@ -39,9 +39,6 @@
        </p>
          </xsl:for-each>
      </div>
-(Autor </xsl:for-each>)
-    <p>
-     <xsl:value=
    </body>
   </html>
  </xsl:template>
