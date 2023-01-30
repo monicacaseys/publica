@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  font-size: large;
+  padding: 5;
+  counter-reset: estrofa;
+  border-spacing: 10px;
+  border: black 1px solid;
+}
+body{
+  counter-reset: estrofa section;
+  width: 85%;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+h1 {
+  margin-left: 10;
+  padding: 5;
+  background-color: black;
+  color: aliceblue;
+  font-style: oblique;
+}
+
+h2 {
+  margin-left: 10;
+  color: rgb(17, 126, 221); color: rgb(17, 126, 221);
+}
+
+div{
+  background-color: black;
+  color: aliceblue;
+  font-size: large;
+}
+
+p{
+  margin-top: 5;
+  margin-bottom: 5;
+  margin-left: 5;
+  color: rgb(10, 43, 71);
+}
+
+div::before{
+  margin-left:10;
+  counter-increment: div;
+  content:"Estrofa" counter(div)": ";
+  counter-reset: p;
+}
+
+p::before{
+  counter-reset: section;
+  content: "Verso: " counter(verso)".";
+}
+span{
+  display: inline-block;
+  background-color: grey;
+}

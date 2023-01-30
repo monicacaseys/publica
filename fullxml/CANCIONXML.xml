@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
+	<titulo>The Best of Both Worlds</titulo>
+	<autor>Hannah Montana</autor>
+	<fechaEstreno/>
+	<letras>
+		<estrofa>
+			<verso>You get the limo out front (ooh-aah-ooh)</verso>
+			<verso>Hottest styles, every shoe, every color</verso>
+			<verso>Yeah, when you're famous it can be kinda fun</verso>
+			<verso>It's really you, but no one ever discovers</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Don't ever say it's over if I'm breathin'</verso>
+			<verso>Racin' to the moonlight and I'm speedin'</verso>
+			<verso>I'm headed to the stars, ready to go far</verso>
+			<verso>I'm star walkin'</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Been that ni* since I came out my mama (woo)</verso>
+			<verso>Thankin' God daddy never wore a condom (woo)</verso>		
+		</estrofa>
+	</letras>
+</cancion>
