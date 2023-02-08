@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio JavaScript</title>
+    <style>
+        #saludo {
+            color: blue;
+            font-size: medium;
+            text-shadow: 2px;
+            background-color: aquamarine;
+        }
+    </style>
+
+    <script>
+        //javaScript tiene su propia etiqueta
+        'use strict';
+        let mensaje = "aprendiendo"; // defien una variable que..
+        const dia = "lunes";
+        var edad = 24; //var es como una variable private
+        var crecimienti = true; //boolean
+        //cost x="";
+        var x = [0]; //crear un array . son medio ilogicos
+
+        console.log(mensaje);
+        console.log(typeof (mensaje)); //para el tipo de mensaje se pone typeof
+        console.log(dia, edad + crecimiento); //concatena
+
+        //JavaScript es muy flexible
+
+        let mesnajeA = "24";
+        console.log(typeof (mesnajeA));
+        document.write(mesnajeA); //escribe mensaje en una misma liena
+        document.writeln(mesnajeA); //lo escrube con un punto y aparte
+    </script>
+</head>
+
+<body>
+    <script>
+        //logo k se ejecuta antes de crearse el DOM.
+    </script>
+    <header>
+        <h1>
+            Inicio a JavaScript
+        </h1>
+        <h2 id="saludo"> ...</h2>
+        <h3 id="tercero"> ...</h3>
+    </header>
+    <script>
+        //se ejecuta despues
+        var texto=document.getElementById("saludo");
+        texto.innerHTML=mensaje;//aqui se muestra el mensaje
+        //esto se coloca al final para que se ejecute
+
+        var texto=document.getElementsByTagName("h5");
+        texto[0].innerHTML=mensaje;
+
+        var texto=document.getElementsByTagName("h2")[0];
+        //en javaScript se puede recorrer un array con un for 
+        texto[0].innerHTML=mensaje;//los corchetes selecciona una possicion concreta
+
+        var texto=document.getElementById("tercero");
+        texto.innerHTML=mensaje;
+    </script>   //los estilos se ponene al final
+        <script sr="./codigoJavaScript.js" type="text/javaScript">
+     </script>
+</body>
+
+</html>
