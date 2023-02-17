@@ -90,7 +90,7 @@ background-size: 100%;
     transition: all .5s;
     display: none;
 }
-#ocultar:checked ~ #ocultar{
+#ocultar:checked ~ #oferta{
     top: -100vh;
 }
 
