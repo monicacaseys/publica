@@ -35,7 +35,6 @@ background-size: 100%;
 #oferta p {
     display: block;
     color: blue;
-    
     text-align: center;
 }
 
@@ -56,10 +55,4 @@ background-size: 100%;
     font-size: 50px;
     text-align: center;
     font-family: fantasy;
-}
-
-#pa:hover {
-    /* para seleccionar cuando se pasa el raton por encima*/
-    color: rgb(231, 16, 195);
-    background-color: rgb(7, 42, 196);
 }
