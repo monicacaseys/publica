@@ -88,13 +88,12 @@ background-size: 100%;
     text-align: center;
     border-radius: 50%;
     transition: all .5s;
+    display: none;
 }
 #ocultar:checked ~ #ocultar{
     top: -100vh;
 }
-#ocultar + label{
-    display: none;
-}
+
 #ver:checked ~ #ocultar + label{
     display: block;
 }
