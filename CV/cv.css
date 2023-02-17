@@ -18,85 +18,23 @@ body{
 background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik=UmTZlrrd3a6tcA&pid=ImgRaw&r=0);
 background-size: 100%;
 }
-#oferta {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.8);
-    color: #fff;
-    transition: all .5s;
+dialog::backdrop{
+    background-color: rgba(250, 235, 215, 0.681);
 }
-
-#oferta p {
-    color: rgb(5, 145, 10);
-    font-size: 1.5em;
-    font-family: fantasy;
-    width: 60%;
-    height: 40%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-}
-
-
-#ver {
-    display: none;
-    width: 100px;
-    height: 100px;
-
-}
-#ver + label {
-    background: slateblue;
-    display: table;
-    margin: auto;
-    color: #fff;
-    line-height: 3;
-    padding: 0 1em;
+button{
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    background-color: cadetblue;
+    color: black;
+    padding: 20px 35px;
+    margin: 30px 0 20px 0;
+    font-size: 1.2em;
     text-transform: uppercase;
-    cursor: pointer;
+    font-weight: 700;
+    transition: 0.25s ease-in-out;
+   box-shadow: 0px 0px 0 #fff;
 }
-#ver + label:hover{
-    background: #38678f;
-}
-#ver:checked ~ #ver{
-    top: 0;
-}
-
-#ocultar {
-   display: none;
-}
-
-#ocultar + label {
-    position: fixed;
-    top: .5rem;
-    right: 1rem;
-    
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    background: red;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    border-radius: 50%;
-    transition: all .5s;
-    display: none;
-}
-#ocultar:checked ~ #oferta{
-    top: -100vh;
-}
-
-#ver:checked ~ #ocultar + label{
-    display: block;
-}
-#ocultar:checked + label {
-    display: none;
+button:hover {
+    box-shadow: 8px 8px 0 #fff;
 }

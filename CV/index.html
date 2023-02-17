@@ -70,17 +70,16 @@
         </fieldset>
 
     </div>
-    <div id="oferta">
-        <p>Información de interés</p>
+    <div id="btn">
+        <button onclick="window.modal.showModal();">+INFO</button>
+        <dialog id="modal">
+            <p>
+                Informacio de interes
+            </p>
+        <button onclick="window.modal.close();">X</button>
+        </dialog>
     </div>
-    <!-- aquí van los dos botones que usaré para mostrar u ocultar la oferta -->
-    <input id="ver" name="oferta" type="radio"/>
-    <label for="ver"> + INFOR</label>
 
-    <input id="ocultar" name="oferta" type="radio"/>
-    <label for="ocultar"> X </label>
-
-   
 </body>
 
 </html>
