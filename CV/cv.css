@@ -37,3 +37,10 @@ background-size: 100%;
     vertical-align: middle;
     text-align: center;
 }
+#ver {
+    display: block;
+}
+
+#ocultar {
+    display: none;
+}
