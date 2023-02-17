@@ -60,6 +60,43 @@
  </fieldset>
 
 </div> 
+    <!-- aquí van los dos botones que usaré para mostrar u ocultar la oferta -->
+    <input id="ver" type="button" onclick="mostrar()" value="+ INFO" />
+    <input id="ocultar" type="button" onclick="ocultar()" value="OCULTAR" />
 
+    <div id="oferta">
+        <h1 id="pa">¡A<br />D<br />V<br />E<br />R<br />T<br />E<br />N<br />C<br />I<br />A!</h1>
+        <p id="pa">Asegurate de Tú DECISIóN<br />
+            vas a descubrir INFORMACIóN <br />EXTRA CONFIDENCIAL del FBI
+        </p>
+    </div>
+    <script>
+        function ocultar() {
+            /* oculto la oferta */
+            document.getElementById("oferta").style.display = "none";
+
+            /* muestro el botón para volver a ver la oferta */
+            document.getElementById("ver").style.display = "inline-block";
+
+            /* oculto este botón */
+            document.getElementById("ocultar").style.display = "none";
+
+            return;
+        }
+
+        function mostrar() {
+            document.getElementById("oferta").style.display = "table";
+
+            /* muestro el botón para ocultar la oferta */
+            document.getElementById("ocultar").style.display = "inline-block";
+
+            /* oculto este botón */
+            document.getElementById("ver").style.display = "none";
+
+            return;
+        }
+
+
+    </script>
 </body>
 </html>
