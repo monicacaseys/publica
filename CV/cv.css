@@ -1,0 +1,20 @@
+fieldset{
+    margin-bottom: 10px;
+
+}
+legend{
+    border: solid 1px violet;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: lightblue;
+
+}
+#mifoto{
+    margin:5px;
+    border: solid 4px green;
+}
+body{
+background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik=UmTZlrrd3a6tcA&pid=ImgRaw&r=0);
+background-size: 100%;
+}
