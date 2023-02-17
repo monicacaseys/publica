@@ -96,3 +96,12 @@ background-size: 100%;
 #ocultar:checked ~ #ocultar{
     top: -100vh;
 }
+#ocultar + label{
+    display: none;
+}
+#ver:checked ~ #ocultar + label{
+    display: block;
+}
+#ocultar:checked + label {
+    display: none;
+}
