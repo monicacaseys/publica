@@ -77,7 +77,7 @@ background-size: 100%;
     position: fixed;
     top: .5rem;
     right: 1rem;
-    z-index: 100;
+    
     color: #fff;
     font-weight: bold;
     cursor: pointer;
