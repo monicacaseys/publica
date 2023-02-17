@@ -33,9 +33,9 @@ background-size: 100%;
 }
 
 #oferta p {
-    display: table-cell;
+    display: block;
     color: blue;
-    vertical-align: middle;
+    
     text-align: center;
 }
 
