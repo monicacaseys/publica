@@ -75,8 +75,8 @@ background-size: 100%;
 
 #ocultar + label {
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: .5rem;
+    right: 1rem;
     z-index: 100;
     color: #fff;
     font-weight: bold;
