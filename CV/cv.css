@@ -32,49 +32,6 @@ background-size: 100%;
     display: none;
 }
 
-
-#izq2,
-#dech2 {
-    display: inline-block;
-}
-
-h1 {
-    
-    text-align: center;
-    font-size: 40px;
-    /* COLOR AMARILLO*/
-    color: #FCDB00;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
-    letter-spacing: 12px;
-}
-
-#h2 {
-    margin: 5px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0;
-    text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
-}
-
-#h1 {
-    text-align: left;
-    font-size: 30px;
-    padding-left: 2%;
-    font-family: cursive;
-    color: cornflowerblue;
-    letter-spacing: 2px;
-}
-
-#oferta1 p {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: rgb(2, 2, 21);
-    padding-left: 3%;
-    text-align: left;
-
-}
-
 #oferta p {
     display: table-cell;
     color: blue;
@@ -93,4 +50,16 @@ h1 {
     display: none;
     width: 100px;
     height: 100px;
+}
+#pa {
+    color: rgb(5, 145, 10);
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+#pa:hover {
+    /* para seleccionar cuando se pasa el raton por encima*/
+    color: rgb(231, 16, 195);
+    background-color: rgb(7, 42, 196);
 }
