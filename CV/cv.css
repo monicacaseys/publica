@@ -18,3 +18,22 @@ body{
 background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik=UmTZlrrd3a6tcA&pid=ImgRaw&r=0);
 background-size: 100%;
 }
+#oferta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+#oferta p {
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+}
