@@ -19,51 +19,80 @@ background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik
 background-size: 100%;
 }
 #oferta {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 80%;
-    height: 80%;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
-    z-index: 1;
+    color: #fff;
     display: none;
+    transition: all .5s;
 }
 
 #oferta p {
     display: block;
-    color: blue;
+    color: rgb(5, 145, 10);
+    font-size: 50px;
+    font-family: fantasy;
+    width: 60%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
 }
+
 
 #ver {
-    display: block;
-    width: 100px;
-    height: 100px;
-
-}
-
-#ocultar {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
     display: none;
     width: 100px;
     height: 100px;
+
+}
+#ver + label {
+    background: slateblue;
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 3;
+    padding: 0 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#ver + label:hover{
+    background: #38678f;
+}
+#ver:checked ~ #ver{
+    top: 0;
 }
 
-  
-  #ocultar :hover,
-  #ocultar :focus {
-    color: #000;
-    text-decoration: none;
+#ocultar {
+   display: none;
+}
+
+#ocultar + label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
     cursor: pointer;
-  }
-#pa {
-    color: rgb(5, 145, 10);
-    font-size: 50px;
+    background: tomato;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     text-align: center;
-    font-family: fantasy;
+    border-radius: 50%;
+    transition: all .5s;
+}
+#ocultar:checked ~ #ocultar{
+    top: -100vh;
 }
