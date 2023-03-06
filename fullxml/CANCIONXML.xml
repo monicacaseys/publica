@@ -6,8 +6,8 @@
 	<autor>Hannah Montana</autor>
 	<genero>Pop </genero>
 </datos>
-	<letras>
-		<estrofa>
+<letras>
+	    <estrofa>
 			<verso>You get the limo out front (ooh-aah-ooh)</verso>
 			<verso>Hottest styles, every shoe, every color</verso>
 			<verso>Yeah, when you're famous it can be kinda fun</verso>
@@ -17,11 +17,11 @@
 			<verso>Don't ever say it's over if I'm breathin'</verso>
 			<verso>Racin' to the moonlight and I'm speedin'</verso>
 			<verso>I'm headed to the stars, ready to go far</verso>
-			<verso>I'm star walkin'</verso>			
+			<verso>I'm star walkinñññññññññ'</verso>			
 		</estrofa>
 		<estrofa>
 			<verso>Been that ni* since I came out my mama (woo)</verso>
 			<verso>Thankin' God daddy never wore a condom (woo)</verso>		
 		</estrofa>
-	</letras>
+</letras>
 </cancion>
