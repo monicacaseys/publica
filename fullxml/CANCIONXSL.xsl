@@ -6,24 +6,16 @@
 				<link rel="stylesheet" type="text/css" href="cancion2.css" />
 			</head>
 			<body>
-			<xsl:apply-templates/>
-			</body>
-		</html>
-	</xsl:template>
-	
-	<xsl:template match="cancion/datos">
 				<h1>
-					<xsl:value-of select="titulo"><xsl:value-of/>
+					<xsl:value-of select="cancion/titulo"/>
 				</h1>
 				<h2>
-					<xsl:value-of select="autor"><xsl:value-of/>
+					<xsl:value-of select="cancion/autor"/>
 				</h2>
-				<h3>
-					<xsl:value-of select="genero"><xsl:value-of/>
-				</h3>
-	</xsl:template>		
-
-	<xsl:template match="cancion/letras">	
+				<h2>
+					<xsl:value-of select="cancion/genero"/>
+				</h2>
+				
           <xsl:for-each select="cancion/letras/estrofa"> 
 					<div class="estrofa">
 							     <xsl:for-each select="verso">
@@ -34,7 +26,10 @@
 						          </span>
 						      </xsl:for-each>  
 					</div>
-				</xsl:for-each>	
+					
+				</xsl:for-each>
+			</body>
+		</html>
 	</xsl:template>
 </xsl:stylesheet>
 
