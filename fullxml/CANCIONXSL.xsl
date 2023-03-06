@@ -13,13 +13,13 @@
 	
 	<xsl:template match="cancion/datos">
 				<h1>
-					<xsl:value-of select="cancion/datos/titulo"><xsl:value-of/>
+					<xsl:value-of select="titulo"><xsl:value-of/>
 				</h1>
 				<h2>
-					<xsl:value-of select="cancion/datos/autor"><xsl:value-of/>
+					<xsl:value-of select="autor"><xsl:value-of/>
 				</h2>
 				<h3>
-					<xsl:value-of select="cancion/datos/genero"><xsl:value-of/>
+					<xsl:value-of select="genero"><xsl:value-of/>
 				</h3>
 	</xsl:template>		
 
