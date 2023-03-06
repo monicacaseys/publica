@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
 <cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
-<datos>
 	<titulo>Commotion</titulo>
 	<autor>Bad Gyal</autor>
     <genero>Dance Hall</genero>
-</datos>
 <letras>
 		<estrofa>
 			<verso>The way you move (Cómo me miras, me mata)</verso>
