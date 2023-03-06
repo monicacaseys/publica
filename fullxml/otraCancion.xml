@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
+	<titulo>Commotion</titulo>
+	<autor>Bad Gyal</autor>
+    <genero>Dance Hall</genero>
+	<letras>
+		<estrofa>
+			<verso>The way you move (Cómo me miras, me mata)</verso>
+			<verso>You got me in the groove (Cómo me miras me mata)</verso>
+			<verso>Theres's so many plans I wanna do with you (Leggo)</verso>
+			<verso>Cuando bailo te causo commotion, motion, motion</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Cuando bailo te causo commotion (Uh yeah)</verso>
+			<verso>Mi baby, lo muevo, tú quieres, yo quiero, ah</verso>
+			<verso>Vamos a hacerlo los dos</verso>
+			<verso>No querrás a otra, prueba, let me be your gyal, eh boy</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>I've no time to look your face</verso>
+			<verso>You're my eyes, is on your waist, yeah</verso>		
+		</estrofa>
+	</letras>
+</cancion>

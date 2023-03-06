@@ -6,16 +6,24 @@
 				<link rel="stylesheet" type="text/css" href="cancion2.css" />
 			</head>
 			<body>
+			<xsl:apply-templates/>
+			</body>
+		</html>
+	</xsl:template>
+	
+	<xsl:template match="cancion/datos">
 				<h1>
-					Hit TV Series
+					<xsl:value-of select="titulo"><xsl:value-of/>
 				</h1>
 				<h2>
-					<xsl:value-of select="cancion/titulo"/>
+					<xsl:value-of select="autor"><xsl:value-of/>
 				</h2>
-				<h2>
-					<xsl:value-of select="cancion/autor"/>
-				</h2>
-				
+				<h3>
+					<xsl:value-of select="genero"><xsl:value-of/>
+				</h3>
+	</xsl:template>		
+
+	<xsl:template match="cancion/letras">	
           <xsl:for-each select="cancion/letras/estrofa"> 
 					<div class="estrofa">
 							     <xsl:for-each select="verso">
@@ -26,10 +34,7 @@
 						          </span>
 						      </xsl:for-each>  
 					</div>
-					
-				</xsl:for-each>
-			</body>
-		</html>
+				</xsl:for-each>	
 	</xsl:template>
 </xsl:stylesheet>
 
