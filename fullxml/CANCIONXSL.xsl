@@ -12,6 +12,9 @@
 				<h2>
 					<xsl:value-of select="ballet/autor"/>
 				</h2>
+				<h2>
+					<xsl:value-of select="ballet/conpositor"/>
+				</h2>
 				<h3>
 					<xsl:value-of select="ballet/genero"/>
 				</h3>
