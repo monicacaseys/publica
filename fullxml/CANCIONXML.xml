@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
 <ballet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
 	<titulo>Swan Lake</titulo>
-	<autor>Compositor: Piotr Ilich Tchaikovsky</autor>
-	<compositor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</compositor> 
+	<compositor>Compositor: Piotr Ilich Tchaikovsky</compositor>
+	<autor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</autor> 
 	<genero>Danza clásica </genero>
 <historia>
 	    <acto>
@@ -14,10 +14,22 @@
 		</acto>
 		<acto>
 			<escena>El príncipe Sigfrido está decidido a liberar a Odette del hechizo y, para ello, debe derrotar al malvado Von Rothbart, el mago que lanzó el hechizo. Von Rothbart aparece en una fiesta en el castillo disfrazado como un noble y presenta a su hija
-			 Odile como la princesa que puede liberar a Sigfrido de su obligación de casarse con alguien de su clase social. Odile se disfraza como Odette para engañar a Sigfrido.</escena>			
+			 Odile como la princesa que puede liberar a Sigfrido de su obligación de casarse con alguien de su clase social. Odile se 
+			 disfraza como Odette para engañar a Sigfrido.</escena>		
+			 <escena>Sigfrido, engañado por la apariencia de Odile, jura amor eterno a ella sin darse cuenta de que está rompiendo su promesa a Odette. En ese momento, 
+			 Odette aparece en el bosque y se da cuenta de que ha sido traicionada por Sigfrido.</escena>		
 		</acto>
 		<acto>
-			<escena>Been that ni* since I came out my mama (woo)</escena>		
+			<escena>Odette y sus cisnes acuden a la orilla del lago a buscar a Sigfrido, quien ha caído en la cuenta de su error. Tras explicarle lo sucedido, Sigfrido se arrepiente y jura amor eterno a Odette. Von Rothbart aparece de nuevo y 
+			lucha contra el príncipe, pero finalmente es derrotado.</escena>		
+			<escena>El hechizo se rompe y Odette y sus compañeras recuperan su forma humana. Sigfrido y Odette se reconcilian y deciden casarse.</escena>	
+		</acto>
+		<acto>
+			<escena>El príncipe Sigfrido celebra su boda con Odette en el castillo. Von Rothbart, 
+			quien ha sobrevivido a la lucha anterior, aparece y trata de arruinar la ceremonia. Pero, finalmente, Odette y
+			 Sigfrido logran vencerlo y el amor triunfa.</escena>		
+			<escena>En el baile final, Odette y Sigfrido se presentan junto a los cisnes y celebran su amor en una hermosa coreografía. La obra termina con un emotivo
+			 adiós de Odette, llamada "La muerte del cisne" uno de los solos mas bonitos de la historia del ballet, se despide del principe mientras bate sus enormes blancas alas llevandole a su muerte.</escena>	
 		</acto>
 </historia>
 </ballet>
