@@ -3,33 +3,20 @@
 <ballet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
 	<titulo>Coppélia</titulo>
 	<compositor>Compositor: Léo Delibes</compositor>
-	<autor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</autor> 
+	<autor>  Arthur Saint-Léon </autor> 
 	<genero>Danza clásica </genero>
 <historia>
 	    <acto>
-			<escena>El príncipe Sigfrido celebra su cumpleaños con sus amigos y su madre, la reina. Durante la fiesta, la reina anuncia que su hijo debe casarse para asegurar la continuidad de la dinastía. 
-			Sigfrido, sin embargo, se siente triste porque desea casarse por amor.</escena>	
-			<escena>Mientras tanto, un grupo de cisnes vuela sobre el castillo. Sigfrido decide salir a cazarlos, pero no logra encontrarlos. En el bosque, se encuentra con Odette, la reina de los cisnes, quien le cuenta la 
-			historia del hechizo que la convirtió a ella y a su corte en cisnes y que solo puede ser roto si alguien le jura amor eterno.</escena>
+			En el primer acto, el escenario presenta una plaza de pueblo en una pequeña aldea. Aquí se presenta a los personajes principales, Franz y Swanilda. Franz está enamorado de una bella joven llamada Coppélia, que vive en una casa en el centro de la plaza. Swanilda, celosa, decide investigar y descubre que Coppélia no es más que una muñeca mecánica creada por el Dr. Coppélius, un inventor excéntrico que vive en la casa. 
+			Swanilda y sus amigas deciden jugarle una broma al Dr. Coppélius, haciéndole creer que su muñeca ha cobrado vida.
 		</acto>
 		<acto>
-			<escena>El príncipe Sigfrido está decidido a liberar a Odette del hechizo y, para ello, debe derrotar al malvado Von Rothbart, el mago que lanzó el hechizo. Von Rothbart aparece en una fiesta en el castillo disfrazado como un noble y presenta a su hija
-			 Odile como la princesa que puede liberar a Sigfrido de su obligación de casarse con alguien de su clase social. Odile se 
-			 disfraza como Odette para engañar a Sigfrido.</escena>		
-			 <escena>Sigfrido, engañado por la apariencia de Odile, jura amor eterno a ella sin darse cuenta de que está rompiendo su promesa a Odette. En ese momento, 
-			 Odette aparece en el bosque y se da cuenta de que ha sido traicionada por Sigfrido.</escena>		
+			En el segundo acto, el Dr. Coppélius invita a Franz a su casa para que él pueda conocer a su amada muñeca Coppélia. Sin embargo, Swanilda se disfraza como Coppélia y engaña a Franz haciéndole creer que es la muñeca que ha cobrado vida. Durante el acto, el Dr. Coppélius intenta hacer que Coppélia cobre vida de verdad, 
+			pero en lugar de eso, las muñecas de su taller cobran vida y lo atacan, mientras que Swanilda y Franz escapan.
 		</acto>
 		<acto>
-			<escena>Odette y sus cisnes acuden a la orilla del lago a buscar a Sigfrido, quien ha caído en la cuenta de su error. Tras explicarle lo sucedido, Sigfrido se arrepiente y jura amor eterno a Odette. Von Rothbart aparece de nuevo y 
-			lucha contra el príncipe, pero finalmente es derrotado.</escena>		
-			<escena>El hechizo se rompe y Odette y sus compañeras recuperan su forma humana. Sigfrido y Odette se reconcilian y deciden casarse.</escena>	
-		</acto>
-		<acto>
-			<escena>El príncipe Sigfrido celebra su boda con Odette en el castillo. Von Rothbart, 
-			quien ha sobrevivido a la lucha anterior, aparece y trata de arruinar la ceremonia. Pero, finalmente, Odette y
-			 Sigfrido logran vencerlo y el amor triunfa.</escena>		
-			<escena>En el baile final, Odette y Sigfrido se presentan junto a los cisnes y celebran su amor en una hermosa coreografía. La obra termina con un emotivo
-			 adiós de Odette, llamada "La muerte del cisne" uno de los solos mas bonitos de la historia del ballet, se despide del principe mientras bate sus enormes blancas alas llevandole a su muerte.</escena>	
+		En el tercer acto, el pueblo celebra una boda, la de Swanilda y Franz. Durante la celebración, el Dr. Coppélius intenta detener la boda, pero Swanilda le ofrece una solución: hacer que su muñeca Coppélia se case con él en lugar de ella. El Dr. Coppélius acepta y la boda sigue adelante, pero cuando la pareja sale del altar, Swanilda le revela a Franz que Coppélia es en realidad una muñeca mecánica.
+		 La obra concluye con una gran celebración en la que todos se unen para celebrar el amor de Swanilda y Franz.
 		</acto>
 </historia>
 </ballet>
