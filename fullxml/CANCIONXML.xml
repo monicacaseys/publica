@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
 <ballet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
 	<titulo>Swan Lake</titulo>
-	<autor>Compositor: Piotr Ilich Tchaikovsky</autor>
-	<compositor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</compositor> 
+	<compositor>Compositor: Piotr Ilich Tchaikovsky</compositor>
+	<autor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</autor> 
 	<genero>Danza clásica </genero>
 <historia>
 	    <acto>
