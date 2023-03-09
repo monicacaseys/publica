@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="CANCIONXSL.xsl"?> 
-<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
-	<titulo>Commotion</titulo>
-	<autor>Bad Gyal</autor>
-    <genero>Dance Hall</genero>
-<letras>
-		<estrofa>
-			<verso>The way you move (Cómo me miras, me mata)</verso>
-			<verso>You got me in the groove (Cómo me miras me mata)</verso>
-			<verso>Theres's so many plans I wanna do with you (Leggo)</verso>
-			<verso>Cuando bailo te causo commotion, motion, motion</verso>			
-		</estrofa>
-		<estrofa>
-			<verso>Cuando bailo te causo commotion (Uh yeah)</verso>
-			<verso>Mi baby, lo muevo, tú quieres, yo quiero, ah</verso>
-			<verso>Vamos a hacerlo los dos</verso>
-			<verso>No querrás a otra, prueba, let me be your gyal, eh boy</verso>			
-		</estrofa>
-		<estrofa>
-			<verso>I've no time to look your face</verso>
-			<verso>You're my eyes, is on your waist, yeah</verso>		
-		</estrofa>
-</letras>
-</cancion>
+<ballet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
+	<titulo>Swan Lake</titulo>
+	<autor>Compositor: Piotr Ilich Tchaikovsky</autor>
+	<compositor>  Marius Petipa y Lev Ivanov </br>Idea original: Vladimir Petrovich Begitchev</compositor> 
+	<genero>Danza clásica </genero>
+<historia>
+	    <acto>
+			<escena>El príncipe Sigfrido celebra su cumpleaños con sus amigos y su madre, la reina. Durante la fiesta, la reina anuncia que su hijo debe casarse para asegurar la continuidad de la dinastía. 
+			Sigfrido, sin embargo, se siente triste porque desea casarse por amor.</escena>	
+			<escena>Mientras tanto, un grupo de cisnes vuela sobre el castillo. Sigfrido decide salir a cazarlos, pero no logra encontrarlos. En el bosque, se encuentra con Odette, la reina de los cisnes, quien le cuenta la 
+			historia del hechizo que la convirtió a ella y a su corte en cisnes y que solo puede ser roto si alguien le jura amor eterno.</escena>
+		</acto>
+		<acto>
+			<escena>El príncipe Sigfrido está decidido a liberar a Odette del hechizo y, para ello, debe derrotar al malvado Von Rothbart, el mago que lanzó el hechizo. Von Rothbart aparece en una fiesta en el castillo disfrazado como un noble y presenta a su hija
+			 Odile como la princesa que puede liberar a Sigfrido de su obligación de casarse con alguien de su clase social. Odile se 
+			 disfraza como Odette para engañar a Sigfrido.</escena>		
+			 <escena>Sigfrido, engañado por la apariencia de Odile, jura amor eterno a ella sin darse cuenta de que está rompiendo su promesa a Odette. En ese momento, 
+			 Odette aparece en el bosque y se da cuenta de que ha sido traicionada por Sigfrido.</escena>		
+		</acto>
+		<acto>
+			<escena>Odette y sus cisnes acuden a la orilla del lago a buscar a Sigfrido, quien ha caído en la cuenta de su error. Tras explicarle lo sucedido, Sigfrido se arrepiente y jura amor eterno a Odette. Von Rothbart aparece de nuevo y 
+			lucha contra el príncipe, pero finalmente es derrotado.</escena>		
+			<escena>El hechizo se rompe y Odette y sus compañeras recuperan su forma humana. Sigfrido y Odette se reconcilian y deciden casarse.</escena>	
+		</acto>
+		<acto>
+			<escena>El príncipe Sigfrido celebra su boda con Odette en el castillo. Von Rothbart, 
+			quien ha sobrevivido a la lucha anterior, aparece y trata de arruinar la ceremonia. Pero, finalmente, Odette y
+			 Sigfrido logran vencerlo y el amor triunfa.</escena>		
+			<escena>En el baile final, Odette y Sigfrido se presentan junto a los cisnes y celebran su amor en una hermosa coreografía. La obra termina con un emotivo
+			 adiós de Odette, llamada "La muerte del cisne" uno de los solos mas bonitos de la historia del ballet, se despide del principe mientras bate sus enormes blancas alas llevandole a su muerte.</escena>	
+		</acto>
+</historia>
+</ballet>
