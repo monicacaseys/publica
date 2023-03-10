@@ -7,16 +7,22 @@
 	<genero>Danza clásica </genero>
 <historia>
 	    <acto>
-			En el primer acto, el escenario presenta una plaza de pueblo en una pequeña aldea. Aquí se presenta a los personajes principales, Franz y Swanilda. Franz está enamorado de una bella joven llamada Coppélia, que vive en una casa en el centro de la plaza. Swanilda, celosa, decide investigar y descubre que Coppélia no es más que una muñeca mecánica creada por el Dr. Coppélius, un inventor excéntrico que vive en la casa. 
-			Swanilda y sus amigas deciden jugarle una broma al Dr. Coppélius, haciéndole creer que su muñeca ha cobrado vida.
+			<escena>En el primer acto, el escenario presenta una plaza de pueblo en una pequeña aldea. Aquí se presenta a los personajes principales, Franz y Swanilda. </escena>
+			<escena>Franz está enamorado de una bella joven llamada Coppélia, que vive en una casa en el centro de la plaza. Swanilda, celosa, decide investigar
+			y descubre que Coppélia no es más que una muñeca mecánica creada por el Dr. Coppélius, un inventor excéntrico que vive en la casa. 
+			Swanilda y sus amigas deciden jugarle una broma al Dr. Coppélius, haciéndole creer que su muñeca ha cobrado vida.</escena>
 		</acto>
 		<acto>
-			En el segundo acto, el Dr. Coppélius invita a Franz a su casa para que él pueda conocer a su amada muñeca Coppélia. Sin embargo, Swanilda se disfraza como Coppélia y engaña a Franz haciéndole creer que es la muñeca que ha cobrado vida. Durante el acto, el Dr. Coppélius intenta hacer que Coppélia cobre vida de verdad, 
-			pero en lugar de eso, las muñecas de su taller cobran vida y lo atacan, mientras que Swanilda y Franz escapan.
+			<escena>En el segundo acto, el Dr. Coppélius invita a Franz a su casa para que él pueda conocer a su amada muñeca Coppélia.
+			 Sin embargo, Swanilda se disfraza como Coppélia y engaña a Franz haciéndole creer que es la muñeca que ha cobrado vida.</escena>
+			<escena> Durante el acto, el Dr. Coppélius intenta hacer que Coppélia cobre vida de verdad, 
+			pero en lugar de eso, las muñecas de su taller cobran vida y lo atacan, mientras que Swanilda y Franz escapan.</escena>
 		</acto>
 		<acto>
-		En el tercer acto, el pueblo celebra una boda, la de Swanilda y Franz. Durante la celebración, el Dr. Coppélius intenta detener la boda, pero Swanilda le ofrece una solución: hacer que su muñeca Coppélia se case con él en lugar de ella. El Dr. Coppélius acepta y la boda sigue adelante, pero cuando la pareja sale del altar, Swanilda le revela a Franz que Coppélia es en realidad una muñeca mecánica.
-		 La obra concluye con una gran celebración en la que todos se unen para celebrar el amor de Swanilda y Franz.
+		<escena>En el tercer acto, el pueblo celebra una boda, la de Swanilda y Franz. Durante la celebración, el Dr. Coppélius intenta detener la boda, pero Swanilda 
+		le ofrece una solución: hacer que su muñeca Coppélia se case con él en lugar de ella.</escena> 
+		<escena>El Dr. Coppélius acepta y la boda sigue adelante, pero cuando la pareja sale del altar, Swanilda le revela a Franz que Coppélia es en realidad una muñeca mecánica.</escena>
+		 <escena>La obra concluye con una gran celebración en la que todos se unen para celebrar el amor de Swanilda y Franz.</escena>
 		</acto>
 </historia>
 </ballet>
