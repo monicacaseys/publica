@@ -60,7 +60,7 @@ div::before{
 
 p::before{
   counter-increment: escena;
-  content: "Escena " counter(escena)". ";
+  content: "Escena " counter(escena, upper-roman)". ";
 }
 span{
   display: inherit;
