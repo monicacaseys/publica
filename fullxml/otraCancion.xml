@@ -3,7 +3,7 @@
 <ballet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CANCIONXML.xsd">
 	<titulo>Coppélia</titulo>
 	<compositor>Compositor: Léo Delibes</compositor>
-	<autor>  Arthur Saint-Léon </autor> 
+	<autor>  Coreografia: Arthur Saint-Léon </autor> 
 	<genero>Danza clásica </genero>
 <historia>
 	    <acto>

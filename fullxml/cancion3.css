@@ -13,17 +13,17 @@ body {
   background-color: aliceblue;
 }
 h1 {
-  margin-left: 10;
+  
   padding: 5;
-  background-color: rgba(167, 233, 237, 0.358);
+  background-color:  rgba(41, 135, 179, 0.375);
 
   font-family: 'Baloo Tamma', cursive;
   font-size: 100px;
   letter-spacing:-2px;
   color: #fff;
   text-shadow: -1px -1px 0px blueviolet,
-  3px 3px 0px aquamarine,
-  6px 6px 0px blue;
+  3px 3px 0px rgba(127, 251, 255, 0.744),
+  6px 6px 0px rgba(0, 0, 255, 0.786);
   -webkit-text-fill-color: #F4ECFF;
   -webkit-text-stroke-color:#C546F7;
   -webkit-text-stroke-width:0.2px; 
@@ -43,12 +43,13 @@ h3 {
 }
 div{
   background-color: rgba(0, 0, 0, 0.733);
-  color: rgb(126, 86, 220);
+  color: rgb(211, 255, 15);
   font-size: x-large;
   margin: 10;
   padding: 1;
   font-weight: bold;
   text-align: center;
+  font-family: 'Baloo Tamma', cursive;
  
 }
 
@@ -56,8 +57,9 @@ p{
   margin-top: 5;
   margin-bottom: 5;
   margin-left: 5;
-  color: rgb(4, 77, 141);
+  color: rgb(169, 146, 173);
   text-align: center;
+  font-family: 'Baloo Tamma', cursive;
 }
 
 div::before{
@@ -68,15 +70,14 @@ div::before{
 }
 
 p::before{
- 
   counter-increment: escena;
   content: "Escena " counter(escena)". ";
 }
 span{
   margin: 10;
   display: inherit;
-  background-color: rgb(211, 255, 15);
-  color: blue;
+  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
   font-weight: bold;
  
 }
