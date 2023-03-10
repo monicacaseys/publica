@@ -5,7 +5,7 @@ body {
   background-color: black;
   font-size: large;
   padding: 5;
-  counter-reset: verso estrofa;
+  counter-reset: escena acto;
   border-spacing: 10px;
   border: black 1px solid;
   width: 85%;
@@ -53,14 +53,14 @@ p{
 
 div::before{
   margin-left:10;
-  counter-increment: estrofa;
-  content:"Estrofa: " counter(estrofa)". ";
+  counter-increment: acto;
+  content:"Acto: " counter(acto)". ";
   
 }
 
 p::before{
-  counter-increment: verso;
-  content: "Verso " counter(verso)". ";
+  counter-increment: escena;
+  content: "Escena " counter(escena)". ";
 }
 span{
   display: inherit;
