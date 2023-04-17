@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"/>
-    <xs:element name="cancion">
+    <xs:element name="ballet">
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="titulo"/>
+                <xs:element ref="compositor"/>
                 <xs:element ref="autor"/>
-                <xs:element ref="fechaEstreno"/>
-                <xs:element ref="letras"/>
+                <xs:element ref="genero"/>
+                <xs:element ref="historia"/>
             </xs:sequence>
             <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="compositor" type="xs:string"/>
     <xs:element name="autor" type="xs:string"/>
-    <xs:element name="fechaEstreno">
-        <xs:complexType/>
-    </xs:element>
-    <xs:element name="letras">
+    <xs:element name="genero" type="xs:string"/>
+    <xs:element name="historia">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="estrofa"/>
+                <xs:element maxOccurs="unbounded" ref="acto"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="estrofa">
+    <xs:element name="acto">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="verso"/>
+                <xs:element maxOccurs="unbounded" ref="escena"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="verso" type="xs:string"/>
+    <xs:element name="escena" type="xs:string"/>
 </xs:schema>

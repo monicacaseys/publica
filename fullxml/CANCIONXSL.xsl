@@ -3,24 +3,27 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="cancion2.css" />
+				<link rel="stylesheet" type="text/css" href="cancion3.css" />
 			</head>
 			<body>
 				<h1>
-					<xsl:value-of select="cancion/titulo"/>
+					<xsl:value-of select="ballet/titulo"/>
 				</h1>
 				<h2>
-					<xsl:value-of select="cancion/autor"/>
+					<xsl:value-of select="ballet/autor"/>
+				</h2>
+				<h2>
+					<xsl:value-of select="ballet/compositor"/>
 				</h2>
 				<h3>
-					<xsl:value-of select="cancion/genero"/>
+					<xsl:value-of select="ballet/genero"/>
 				</h3>
 				
-          <xsl:for-each select="cancion/letras/estrofa"> 
-					<div class="estrofa">
-							     <xsl:for-each select="verso">
+          <xsl:for-each select="ballet/historia/acto"> 
+					<div class="acto">
+							     <xsl:for-each select="escena">
 							     	<span>
-						          <p class="verso">
+						          <p class="escena">
      						          <xsl:value-of select="."/>
 						          </p>
 						          </span>
