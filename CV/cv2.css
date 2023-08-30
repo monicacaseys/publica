@@ -93,11 +93,21 @@ button:hover {
     border-radius: 15px; /* Bordes redondeados en todas las esquinas */
     padding: 20px;
     background-color: white;
+    position: relative; /* Añade posición relativa */
 }
 
 .section h2 {
     color: darkblue;
+    position: absolute; /* Añade posición absoluta */
+    top: -20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+    background-color: white; /* Establece el fondo del título al color de fondo de la sección */
+    padding: 0 10px; /* Añade relleno para separar el título del borde superior */
+    border-top-left-radius: 15px; /* Borde superior izquierdo redondeado */
+    border-top-right-radius: 15px; /* Borde superior derecho redondeado */
+    border: 2px solid #0077B5; /* Borde superior azul */
 }
+
 /* Estilos para la sección "Home" */
 #home {
     text-align: center;
@@ -146,3 +156,107 @@ button:hover {
 dialog::backdrop {
     background-color: rgba(250, 235, 215, 0.681);
 }
+
+/* Estilos para la sección de formación */
+#formacion ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+}
+
+#formacion li {
+    width: calc(50% - 10px); /* 50% de ancho menos el espacio entre elementos */
+    margin-bottom: 20px; /* Espacio entre elementos */
+    background-color: #f2f2f2; /* Color de fondo para cada cuadrado */
+    border: 2px solid #0077B5; /* Borde azul para cada cuadrado */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados para cada cuadrado */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+}
+/* Estilos para la sección de experiencia laboral */
+#experiencia ul,
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+}
+
+#experiencia li,
+#habilidades li {
+    width: calc(50% - 10px); /* 50% de ancho menos el espacio entre elementos */
+    margin-bottom: 20px; /* Espacio entre elementos */
+    background-color: #f2f2f2; /* Color de fondo para cada cuadrado */
+    border: 2px solid #0077B5; /* Borde azul para cada cuadrado */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados para cada cuadrado */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+}
+/* Estilos para la sección de habilidades */
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 2px solid #0077B5;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#habilidades li::before {
+    font-weight: bold;
+    content: attr(data-label) " - ";
+}
+
+/* Estilos específicos para el recuadro de idiomas */
+#habilidades li[data-label="Idiomas"] {
+    background-color: #f2f2f2;
+    border: 2px solid #0077B5;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+.year-background {
+    background-color: #efbef9c9; /* Cambia el color de fondo según tu preferencia */
+    padding: 2px 5px; /* Ajusta el espaciado alrededor del año */
+    border-radius: 5px; /* Agrega bordes redondeados al fondo */
+    margin-top: 10%;
+}#contactame {
+    text-align: center; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+}
+
+#contactame .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente los elementos internos */
+}
+
+#contactame .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre los elementos de contacto */
+}
+
+#contactame .contact-icon {
+    font-size: 36px; /* Tamaño del icono (ajusta según tus preferencias) */
+}
+
+#contactame .contact-text {
+    font-size: 18px; /* Tamaño del texto de información (ajusta según tus preferencias) */
+    margin-top: 10px; /* Espacio entre el icono y el texto de información */
+}
+
+
