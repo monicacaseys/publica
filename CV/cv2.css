@@ -259,4 +259,14 @@ dialog::backdrop {
     margin-top: 10px; /* Espacio entre el icono y el texto de información */
 }
 
+/* Agrega líneas verticales */
+#home p:nth-child(3):before,
+#home p:nth-child(4):before {
+    content: "";
+    width: 1px; /* Ancho de la línea */
+    height: 10%; /* Altura de la línea (del tamaño del contenedor) */
+    background-color: #0077B5; /* Color de la línea */
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre las líneas y el texto */
+}
 
