@@ -1,148 +1,80 @@
-*{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(249, 250, 249);
+  -webkit-text-stroke: 1px rgb(71, 70, 70);
 }
 
-#mifoto{
-    margin:5px;
-    border: solid 4px green;
+dialog::backdrop {
+  background-color: rgba(250, 235, 215, 0.681);
 }
-/* body{
-background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik=UmTZlrrd3a6tcA&pid=ImgRaw&r=0);
-background-size: 100%;
-} */
-dialog::backdrop{
-    background-color: rgba(250, 235, 215, 0.681);
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  background-color: rgb(67, 178, 182);
+  color: black;
+  padding: 20px 35px;
+  margin: 30px 0 20px 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.7098039216);
 }
-button{
-    cursor: pointer;
-    border-radius: 0;
-    border: none;
-    background-color: rgb(67, 178, 182);
-    color: black;
-    padding: 20px 35px;
-    margin: 30px 0 20px 0;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: 0.25s ease-in-out;
-   box-shadow: 0px 0px 0 #ffffffb5;
-}
+
 button:hover {
-    box-shadow: 8px 8px 0 #fff;
+  box-shadow: 8px 8px 0 #fff;
 }
-#modal p{
-    color: green;
-    font-size: 1.4em;
-    font:italic;
-}
-#menu {
-    position: fixed;
-    top: 10px; /* Separación desde la parte superior */
-    left: 10px; /* Separación desde el borde izquierdo */
-    width: 200px;
-    background-color: #334455; /* Cambiar a tu color deseado */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    overflow-y: auto;
-    height: calc(100% - 20px); /* Resta 20px para separación desde la parte inferior */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-    border: 2px solid #0077B5; /* Borde azul */
-}
-
-#menu a {
-    color: #ccc; /* Color de texto gris claro */
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease; /* Transición suave del color de texto */
-    padding: 10px 20px; /* Añadido para crear un área más grande para el hover */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-}
-
-#menu a:hover {
-    color: white; /* Color de texto blanco al pasar el ratón por encima */
-    background-color: #0077B5; /* Cambio de color de fondo al pasar el ratón */
-}
-/* Estilos para el enlace activo */
-#menu a.active {
-    background-color: #0077B5; /* Color de fondo azul */
-    color: white; /* Color de texto blanco para el enlace activo */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-}
-
-
-
 
 #content {
-    margin-left: 220px; /* Ancho del menú con separación del borde izquierdo */
-    padding: 20px;
-    background-color: white; /* Fondo blanco para el contenido */
-    border-top-left-radius: 0; /* Borde superior izquierdo sin redondear */
-    border-bottom-left-radius: 0; /* Borde inferior izquierdo sin redondear */
-    border-top-right-radius: 15px; /* Borde superior derecho redondeado */
-    border-bottom-right-radius: 15px; /* Borde inferior derecho redondeado */
+  padding: 100px;
 }
 
-/* Estilos para las secciones */
 .section {
-    margin-bottom: 30px;
-    border: 2px solid #0077B5; /* Borde azul */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-    padding: 20px;
-    background-color: white;
+  margin-bottom: 30px;
+  border: 2px solid #0077B5;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.section h2 {
-    color: darkblue;
-}
-/* Estilos para la sección "Home" */
 #home {
-    text-align: center;
+  text-align: center;
 }
-
 #home img {
-    max-width: 100%;
-    border-radius: 50%;
+  width: 15%;
+  border-radius: 50%;
 }
-
 #home h1 {
-    font-size: 24px;
-    margin: 10px 0;
+  font-size: 24px;
+  margin: 10px 0;
 }
-
 #home p {
-    font-size: 18px;
-    margin: 10px 0;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-/* Estilos para el botón "Más información" */
 #linkedin-button {
-    display: inline-block;
-    background-color: #0077B5;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  display: inline-block;
+  background-color: #0077B5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
-
 #linkedin-button:hover {
-    background-color: #005580; /* Cambio de color de fondo al pasar el ratón */
-}
-
-/* Estilos para las imágenes circulares */
-#menu img,
-#home img {
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-/* Estilos para el diálogo modal */
-dialog::backdrop {
-    background-color: rgba(250, 235, 215, 0.681);
-}
+  background-color: #005580;
+}/*# sourceMappingURL=cv.css.map */

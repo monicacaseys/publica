@@ -6,10 +6,12 @@
     margin:5px;
     border: solid 4px green;
 }
-/* body{
-background: url(https://th.bing.com/th/id/R.856d40da858a66d34af5a0e6951dbcf6?rik=UmTZlrrd3a6tcA&pid=ImgRaw&r=0);
-background-size: 100%;
-} */
+ body{
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
 dialog::backdrop{
     background-color: rgba(250, 235, 215, 0.681);
 }
@@ -79,11 +81,11 @@ button:hover {
 #content {
     margin-left: 220px; /* Ancho del menú con separación del borde izquierdo */
     padding: 20px;
-    background-color: white; /* Fondo blanco para el contenido */
+   /*  background-color: white; /* Fondo blanco para el contenido */
     border-top-left-radius: 0; /* Borde superior izquierdo sin redondear */
     border-bottom-left-radius: 0; /* Borde inferior izquierdo sin redondear */
     border-top-right-radius: 15px; /* Borde superior derecho redondeado */
-    border-bottom-right-radius: 15px; /* Borde inferior derecho redondeado */
+    border-bottom-right-radius: 15px; /* Borde inferior derecho redondeado */ 
 }
 
 /* Estilos para las secciones */
