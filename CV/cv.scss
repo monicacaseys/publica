@@ -38,7 +38,7 @@ button:hover {
 }
 
 #content {
-    padding: 100px;
+    padding: 60px;
 }
 
 .section {
@@ -86,5 +86,23 @@ button:hover {
 
     &:hover {
         background-color: #005580;
+    }
+}
+
+/* Media query para pantallas móviles */
+@media only screen and (max-width: 767px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+
+      
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    #content {
+        padding: 40px;
     }
 }
