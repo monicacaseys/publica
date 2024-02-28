@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,21 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mónica Seys Oltra</title>
+    <title>Mónica Seys Oltra CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="cv2.css" rel="stylesheet">
 </head>
 
 <body>
+    
     <!-- Menú lateral -->
     <div id="menu">
-        <img src="https://media-exp1.licdn.com/dms/image/D4E03AQG1aKtpFGxjXQ/profile-displayphoto-shrink_200_200/0/1664390628198?e=2147483647&v=beta&t=H49qnnhTcaMDXiNuy258h3awaIADFOY7em7i5RRyWls"
-            alt="Foto de Mónica Seys Oltra">
         <h2>Mónica Seys Oltra</h2>
-        <h3>24 años 📍Málaga</h3>
+        <h2>25 años</h2>
+        <h3>📍Málaga</h3>
 
         <a onclick="scrollToSection('home')" id="home-link">Home</a>
-        <a onclick="scrollToSection('info-interes')" id="info-interes-link">Presentación</a>
+        <!-- <a onclick="scrollToSection('info-interes')" id="info-interes-link">Presentación</a> -->
         <a onclick="scrollToSection('habilidades')" id="habilidades-link">Habilidades</a>
+        <a onclick="scrollToSection('idiomas')" id="idiomas-link">Idiomas</a>
         <a onclick="scrollToSection('formacion')" id="formacion-link">Formación</a>
         <a onclick="scrollToSection('experiencia')" id="experiencia-link">Experiencia Laboral</a>
         <a onclick="scrollToSection('contactame')" id="contactame-link">Contáctame</a>
@@ -28,117 +33,214 @@
 
     <!-- Contenido principal -->
     <div id="content">
-        <div class="section" id="home">
+        <a  id="volver" href="index.html">
+            <button id="volver">Volver</button>
+        </a>
+        <!--      <div class="section" id="home">
             <img src="https://media-exp1.licdn.com/dms/image/D4E03AQG1aKtpFGxjXQ/profile-displayphoto-shrink_200_200/0/1664390628198?e=2147483647&v=beta&t=H49qnnhTcaMDXiNuy258h3awaIADFOY7em7i5RRyWls"
                 alt="Foto de Mónica Seys Oltra">
             <p>Hi there!</p>
             <p></p>
             <p></p>
             <h1>I'M MONICA SEYS</h1>
-            <p>I am an active and energetic person with a friendly and positive attitude,</br> committed bringing my
-                enthusiasm and positive attitude to any team and project.</p>
-            <a href="https://www.linkedin.com/in/m%C3%B3nica-seys-oltra-825a23208/" target="_blank"
-                id="linkedin-button">Más información</a>
-        </div>
-        
-        <div class="section" id="info-interes">
-            <h2 style="margin-top: 10px;">Presentación</h2>
+            
+        </div> -->
+
+        <div class="section" id="home"><!-- info-interes -->
+            <!--  <h2 style="margin-top: 10px;">Presentación</h2> -->
             <ul>
                 <!-- Contenido de Datos de interés -->
+                <img src="cc.gif" alt="Foto de un pc bebiendo cafe">
+                <p> Nativa en terra de meigas.
+                    </br>Llevo a la danza clasica en mi corazón.
+                    </br> Graduada de Administración y Dirección de Empresas en Madrid.
+                    </br>Actualmente despega mi carrera en Desarrollo de Aplicaciones Web.</br>
+                    <span style="background-color: #f8ff2799; color: #053e5c; font-weight: bold;">
+                        ¡Es un placer conocerte!
+                    </span>
+                </p>
+                <div class="linea"></div>
 
-                <p> "Soy nativa de Galicia. Me gradué en ADE en Madrid y actualmente estudio Desarrollo de Aplicaciones
-                    Web.</br> La danza ha sido mi pasión desde niña. Disfruto explorando el maquillaje artístico y
-                    siempre estoy ansiosa por aprender cosas nuevas.</br> ¡Encantada de conocerte!"</p>
+                <p>I am an active and energetic person with a friendly and positive attitude,</br>
+                    ¡Come on!
+                    <span style="background-color: #f8ff2799; color: #053e5c; font-weight: bold;">
+                        Check out my Linkedin
+
+                    </span>
+                </p>
+                <a href="https://www.linkedin.com/in/m%C3%B3nica-seys-oltra-825a23208/" target="_blank"
+                    id="linkedin-button" style="font-size: 30px;">in</a>
 
             </ul>
         </div>
-
         <div class="section" id="habilidades">
             <h2 style="margin-top: 10px;">Habilidades</h2>
             <ul>
                 <!-- Contenido de Habilidades -->
-                <li data-label="Idiomas">
-                    Galego (Nativo), Francés (B2), Inglés (B1)
+                <li>
+                    Edición imagen y video:
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 60%;"></div>
+                    </div>
                 </li>
-                <li data-label="Edición imagen y video">Edición imagen y video: Experimental</li>
-                <li data-label="Titulo MOSS">Excel</li>
-                <li data-label="Negocio familiar">Negocio familiar: Escuela de danza. Conocimientos administración de la
-                    empresa pequeña.</li>
+                <li>
+                    Titulo MOSS:
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 40%;"></div>
+                    </div>
+                </li>
+                <li>
+                    Negocio familiar: Escuela de danza. Conocimientos administración de la
+                    empresa pequeña.
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </li>
             </ul>
         </div>
-
+        <div class="section" id="idiomas">
+            <h2 style="margin-top: 10px;">Idiomas</h2>
+            <ul>
+                <li class="progress-item">
+                    <div class="progress-label">Español Nativo</div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 100%;"></div>
+                    </div>
+                </li>
+                <li class="progress-item">
+                    <div class="progress-label">Galego Nativo</div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 100%;"></div>
+                    </div>
+                </li>
+                <li class="progress-item">
+                    <div class="progress-label">Francés B2</div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="progress-item">
+                    <div class="progress-label">Inglés B1</div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
         <div class="section" id="formacion">
             <h2 style="margin-top: 10px;">Formación</h2>
-            <ul>
-                <!-- Contenido de Formación -->
+            <ul class="experiencias">
                 <li>
-                    <strong>Ciclo Superior en Desarrollo de Aplicaciones Web</strong><br>
-                    CENEC Málaga<br>
-                    <span class="year-background">Año: 2022 - Actualidad</span><br>
-                    Media: 9<br>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                            <strong>Ciclo Superior en Desarrollo de Aplicaciones Web</strong><br>
+                            CENEC Málaga<br>
+                            <span class="year-background">Año: 2022 - Actualidad</span><br>
+                            Media: 9<br>
+                        </div>
+                    </div>
                 </li>
-
+        
                 <li>
-                    <strong>Bachillerato</strong><br>
-                    Sagrado Corazón de Jesús, Pontevedra<br>
-                    <span class="year-background">Año: 2014 - 2016</span><br>
-                </li>
-                <li>
-                    <strong>Grado en Administración y Dirección de Empresas</strong><br>
-                    Universidad Rey Juan Carlos, Madrid<br>
-                    <span class="year-background">Año: 2016 - 2022</span><br>
-                    Media: 7<br>
-                    SICUE en Universidade da Coruña<br>
-                    Media: 6.41<br>
-                </li>
-                <li>
-                    <strong>ACADE</strong><br>
-                    Titulo en danza clasica<br>
-                    <span class="year-background"> Año: 2010 - 2016</span><br>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                            <strong>Bachillerato</strong><br>
+                            Sagrado Corazón de Jesús, Pontevedra<br>
+                            <span class="year-background">Año: 2014 - 2016</span><br>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <strong>Académie Princesse Grace, Monaco</strong><br>
-                    Curso danza clásica y contemporanea<br>
-                    <span class="year-background">Año: 2016</span><br>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                            <strong>Grado en Administración y Dirección de Empresas</strong><br>
+                            Universidad Rey Juan Carlos, Madrid<br>
+                            <span class="year-background">Año: 2016 - 2022</span><br>
+                            Media: 7<br>
+                            SICUE en Universidade da Coruña<br>
+                            Media: 6.41<br>
+                        </div>
+                    </div>
                 </li>
-
+                <li>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                            <strong>ACADE</strong><br>
+                            Titulo en danza clasica<br>
+                            <span class="year-background"> Año: 2010 - 2016</span><br>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                            <strong>Académie Princesse Grace, Monaco</strong><br>
+                            Curso danza clásica y contemporanea<br>
+                            <span class="year-background">Año: 2016</span><br>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
-
+        
 
 
         <div class="section" id="experiencia">
             <h2 style="margin-top: 10px;">Experiencia Laboral</h2>
-            <ul>
+            <ul  class="experiencias">
                 <li>
-                    <strong style="margin-right: 80px;">BARBATUKE</strong>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                    <strong style="margin-right: 10px;">LENGUAGES AWAY</strong>
                     <span class="year-background">Año: 2023</span><br>
-                    Empresa hostelera<br>
-                    Gestión de datos desde interfaz web
+                    Empresa intercambio estudiantes<br>
+                    <strong style="color: #908f8f;">Inyección de datos desde iterfaz de admin</strong>
+                </div></div>
                 </li>
                 <li>
-                    <strong style="margin-right: 20px;">Escuela de danza Vaganova, Pontevedra</strong>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                    <strong style="margin-right: 10px;">Escuela de danza Vaganova, Pontevedra</strong>
                     <span class="year-background">Año: 2018-Actualidad</span><br>
                     Negocio familiar<br>
-                    Creatividad en redes sociales, gestión de alumnos y procesos, profesora de ballet.
+                    <strong style="color: #908f8f;">Creatividad en redes sociales, gestión de alumnos y procesos, profesora de ballet</strong>
+                </div></div>
                 </li>
                 <li>
-                    <strong style="margin-right: 20px;">Fundación UNOENTRECIENMIL</strong>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                    <strong style="margin-right: 10px;">Fundación UNOENTRECIENMIL</strong>
                     <span class="year-background">Año: 2021-2022</span><br>
                     Practicas en empresa en soporte a proyectos<br>
-                    Nota: 9<br>
-                    Manejo CRM interno, bases de datos y procesos, ingresos, status semanal.
+                    <strong style="color: #908f8f;">Manejo CRM interno, bases de datos y procesos, ingresos, status semanal</strong>
+                    
+                </div></div>
                 </li>
                 <li>
-                    <strong style="margin-right: 20px;">Pablo Mendez Performances</strong>
+                    <div class="punto-experiencia"></div>
+                    <div class="contenido-experiencia">
+                        <div id="explicacion">
+                    <strong style="margin-right: 10px;">Pablo Mendez Performances</strong>
                     <span class="year-background">Año: 2019-2020</span><br>
                     Compañia de artistas<br>
-                    Espectaculos al aire libre
+                    <strong style="color: #908f8f;">Espectaculos al aire libre</strong>
+                    
+                </div>
+                </div>
                 </li>
 
             </ul>
         </div>
+
         <div class="section" id="contactame">
             <h2 style="margin-top: 10px;">Contacto</h2>
             <div class="contact-info">

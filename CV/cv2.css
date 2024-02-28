@@ -1,271 +1,519 @@
-*{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@charset "UTF-8";
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#mifoto{
-    margin:5px;
-    border: solid 4px green;
+body {
+  background-color: rgba(144, 142, 142, 0.557);
 }
- body{
-    background-color: #334455e2;
-} 
-dialog::backdrop{
-    background-color: rgba(250, 235, 215, 0.681);
+
+#volver {
+  padding: 10px;
+  background-color: #0077B5;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  border-color: rgba(39, 107, 255, 0.6);
 }
-button{
-    cursor: pointer;
-    border-radius: 0;
-    border: none;
-    background-color: rgb(67, 178, 182);
-    color: black;
-    padding: 20px 35px;
-    margin: 30px 0 20px 0;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: 0.25s ease-in-out;
-   box-shadow: 0px 0px 0 #ffffffb5;
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  background-color: rgb(67, 178, 182);
+  color: black;
+  padding: 20px 35px;
+  margin: 30px 0 20px 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.7098039216);
 }
+
 button:hover {
-    box-shadow: 8px 8px 0 #fff;
+  box-shadow: 8px 8px 0 #fff;
 }
-#modal p{
-    color: green;
-    font-size: 1.4em;
-    font:italic;
-}
+
 #menu {
-    position: fixed;
-    top: 10px; /* Separación desde la parte superior */
-    left: 10px; /* Separación desde el borde izquierdo */
-    width: 200px;
-    background-color: #334455; /* Cambiar a tu color deseado */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    overflow-y: auto;
-    height: calc(100% - 20px); /* Resta 20px para separación desde la parte inferior */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-    border: 2px solid #0077B5; /* Borde azul */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  background-color: rgba(248, 255, 39, 0.6);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  overflow-y: auto;
+  border-radius: 15px; /* Bordes redondeados en todas las esquinas */
+  box-shadow: 2px 3px #08385b;
+  border: 1px solid #08385b;
+}
+
+#menu h2 {
+  font-family: "MuseoModerno", sans-serif;
 }
 
 #menu a {
-    color: #ccc; /* Color de texto gris claro */
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease; /* Transición suave del color de texto */
-    padding: 10px 20px; /* Añadido para crear un área más grande para el hover */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición suave del color de texto */
+  padding: 10px 20px;
+  border-radius: 15px;
 }
 
 #menu a:hover {
-    color: white; /* Color de texto blanco al pasar el ratón por encima */
-    background-color: #0077B5; /* Cambio de color de fondo al pasar el ratón */
+  color: rgba(248, 255, 39, 0.6);
+  background-color: #08385b;
 }
+
 /* Estilos para el enlace activo */
 #menu a.active {
-    background-color: #0077B5; /* Color de fondo azul */
-    color: white; /* Color de texto blanco para el enlace activo */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
+  background-color: rgba(46, 158, 239, 0.937254902);
+  color: white;
+  border-radius: 15px;
 }
 
-
-
-
+@media only screen and (max-width: 767px) {
+  #menu {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(248, 255, 39, 0.6);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+  #menu h2, #menu h3 {
+    display: block;
+    margin: 10px auto;
+  }
+  #menu a {
+    display: none;
+  }
+  #content {
+    margin-left: 0 !important;
+    margin-top: 150px; /* Ajuste para evitar que el contenido se solape con el menú */
+  }
+}
+/*Estlos para todas las secciones por igual*/
 #content {
-    margin-left: 220px; /* Ancho del menú con separación del borde izquierdo */
-    padding: 20px;
-   /*  background-color: white; /* Fondo blanco para el contenido */
-    border-top-left-radius: 0; /* Borde superior izquierdo sin redondear */
-    border-bottom-left-radius: 0; /* Borde inferior izquierdo sin redondear */
-    border-top-right-radius: 15px; /* Borde superior derecho redondeado */
-    border-bottom-right-radius: 15px; /* Borde inferior derecho redondeado */ 
+  margin-left: 220px;
+  padding: 20px;
+  border-top-left-radius: 0; /* Borde superior izquierdo sin redondear */
+  border-bottom-left-radius: 0; /* Borde inferior izquierdo sin redondear */
+  border-top-right-radius: 15px; /* Borde superior derecho redondeado */
+  border-bottom-right-radius: 15px; /* Borde inferior derecho redondeado */
 }
 
-/* Estilos para las secciones */
 .section {
-    margin-bottom: 30px;
-    border: 2px solid #0077B5; /* Borde azul */
-    border-radius: 15px; /* Bordes redondeados en todas las esquinas */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.557);
-    position: relative; /* Añade posición relativa */
+  margin-bottom: 30px;
+  box-shadow: 2px 3px #08385b;
+  border: 1px solid #08385b;
+  border-radius: 15px; /* Bordes redondeados en todas las esquinas */
+  padding: 20px;
+  background-color: rgba(226, 227, 228, 0.6745098039);
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos en columna */
+  align-items: center;
 }
 
 .section h2 {
-    color: darkblue;
-    position: absolute; /* Añade posición absoluta */
-    top: -20px; /* Ajusta la distancia desde la parte superior */
-    left: 20px; /* Ajusta la distancia desde la izquierda */
-    background-color: white; /* Establece el fondo del título al color de fondo de la sección */
-    padding: 0 10px; /* Añade relleno para separar el título del borde superior */
-    border-top-left-radius: 15px; /* Borde superior izquierdo redondeado */
-    border-top-right-radius: 15px; /* Borde superior derecho redondeado */
-    border: 2px solid #0077B5; /* Borde superior azul */
+  color: #f8ff27;
+  background-color: #08385b !important;
+  position: absolute;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  top: -20px; /* Ajusta la distancia desde la parte superior */
+  left: 20px; /* Ajusta la distancia desde la izquierda */
+  background-color: white;
+  padding: 0 15px; /* Añade relleno para separar el título del borde superior */
+  border-top-left-radius: 15px; /* Borde superior izquierdo redondeado */
+  border-top-right-radius: 15px; /* Borde superior derecho redondeado */
+  border-bottom-left-radius: 15px; /* Borde superior izquierdo redondeado */
+  border-bottom-right-radius: 15px; /* Borde superior derecho redondeado */
+  box-shadow: 2px 3px #08385b;
+  border: 1px solid #08385b;
+  font-family: "MuseoModerno", sans-serif;
 }
 
-/* Estilos para la sección "Home" */
+/* Estilos para Home */
 #home {
-    text-align: center;
-}
-
-#home img {
-    max-width: 100%;
-    border-radius: 50%;
+  text-align: center;
+  background-image: url("nubes.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 #home h1 {
-    font-size: 24px;
-    margin: 10px 0;
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 #home p {
-    font-size: 18px;
-    margin: 10px 0;
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
 }
 
 /* Estilos para el botón "Más información" */
 #linkedin-button {
-    display: inline-block;
-    background-color: #0077B5;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  display: inline-block;
+  background-color: #0077B5;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 #linkedin-button:hover {
-    background-color: #005580; /* Cambio de color de fondo al pasar el ratón */
+  background-color: #005580;
 }
 
+/*Linea del home*/
+.linea {
+  width: 2px; /* grosor de la línea */
+  height: 0;
+  background-color: #0077B5;
+  animation: aparecer 2s forwards; /* duración de la animación */
+  margin: 20px auto;
+}
+
+@keyframes aparecer {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70px; /* longitud de la línea */
+  }
+}
 /* Estilos para las imágenes circulares */
 #menu img,
 #home img {
-    max-width: 100%;
-    border-radius: 50%;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
-/* Estilos para el diálogo modal */
-dialog::backdrop {
-    background-color: rgba(250, 235, 215, 0.681);
-}
-
-/* Estilos para la sección de formación */
-#formacion ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
-}
-
-#formacion li {
-    width: calc(50% - 10px); /* 50% de ancho menos el espacio entre elementos */
-    margin-bottom: 20px; /* Espacio entre elementos */
-    background-color: #f2f2f2; /* Color de fondo para cada cuadrado */
-    border: 2px solid #0077B5; /* Borde azul para cada cuadrado */
-    padding: 10px;
-    border-radius: 10px; /* Bordes redondeados para cada cuadrado */
-    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-}
-/* Estilos para la sección de experiencia laboral */
-#experiencia ul,
-#habilidades ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
-}
-
-#experiencia li,
-#habilidades li {
-    width: calc(50% - 10px); /* 50% de ancho menos el espacio entre elementos */
-    margin-bottom: 20px; /* Espacio entre elementos */
-    background-color: #f2f2f2; /* Color de fondo para cada cuadrado */
-    border: 2px solid #0077B5; /* Borde azul para cada cuadrado */
-    padding: 10px;
-    border-radius: 10px; /* Bordes redondeados para cada cuadrado */
-    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-}
 /* Estilos para la sección de habilidades */
 #habilidades ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #habilidades li {
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
-    border: 2px solid #0077B5;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #757575;
+  color: white;
+  border-radius: 10px;
 }
 
-#habilidades li::before {
-    font-weight: bold;
-    content: attr(data-label) " - ";
+/* Estilos para la sección de idiomas */
+#idiomas ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Estilos específicos para el recuadro de idiomas */
-#habilidades li[data-label="Idiomas"] {
-    background-color: #f2f2f2;
-    border: 2px solid #0077B5;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-weight: bold; /* Hacer el texto en negrita */
+#idiomas li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #757575;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
 }
-.year-background {
-    background-color: #efbef9c9; /* Cambia el color de fondo según tu preferencia */
-    padding: 2px 5px; /* Ajusta el espaciado alrededor del año */
-    border-radius: 5px; /* Agrega bordes redondeados al fondo */
-    margin-top: 10%;
-}#contactame {
-    text-align: center; /* Centrar horizontalmente */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrar verticalmente */
+
+/*barra de progreso*/
+.progress-bar {
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(117, 117, 117, 0);
+  border-radius: 10px;
+}
+
+.progress-bar-fill {
+  height: 20px;
+  background-color: #000000;
+  width: 0; /* Inicialmente está vacío */
+  animation: fillProgress 1s ease-in-out forwards; /* Animación de rellenado */
+  border-radius: 10px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+/* Animación de rellenado */
+@keyframes fillProgress {
+  from {
+    width: 0; /* Inicio: vacío */
+  }
+  to {
+    /* Final: el ancho especificado en el HTML */
+    width: inherit !important;
+  }
+}
+#contactame {
+  text-align: center; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar verticalmente */
 }
 
 #contactame .contact-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* Centrar horizontalmente los elementos internos */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #contactame .contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px; /* Espacio entre los elementos de contacto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
 }
 
 #contactame .contact-icon {
-    font-size: 36px; /* Tamaño del icono (ajusta según tus preferencias) */
+  font-size: 36px;
 }
 
 #contactame .contact-text {
-    font-size: 18px; /* Tamaño del texto de información (ajusta según tus preferencias) */
-    margin-top: 10px; /* Espacio entre el icono y el texto de información */
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Agrega líneas verticales */
-#home p:nth-child(3):before,
-#home p:nth-child(4):before {
-    content: "";
-    width: 1px; /* Ancho de la línea */
-    height: 10%; /* Altura de la línea (del tamaño del contenedor) */
-    background-color: #0077B5; /* Color de la línea */
-    display: inline-block;
-    margin: 0 10px; /* Espacio entre las líneas y el texto */
+/*Experiencia y formacion*/
+.experiencias {
+  list-style: none;
+  padding: 0;
 }
 
+.experiencias li {
+  margin-bottom: 20px; /* Espacio entre cada experiencia */
+}
+
+.punto-experiencia {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #908f8f; /* Color del círculo */
+}
+
+.contenido-experiencia {
+  position: static;
+}
+
+#explicacion {
+  margin-left: 20px;
+}
+
+.contenido-experiencia::before {
+  content: "";
+  position: absolute;
+  margin-left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%; /* Altura igual a la altura del contenido */
+  background-color: #908f8f; /* Color de la línea */
+  transform: translateX(-50%); /* Centra la línea horizontalmente */
+}
+
+/* Estilos para el año de experiencia */
+.year-background {
+  background-color: rgba(248, 255, 39, 0.6); /* Color de fondo del año */
+  padding: 2px 5px;
+}
+
+/*PORFOLIO*/
+#bPorfolio {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* 100% del viewport height */
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  text-align: center;
+  background-image: url("nubes.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos para los divs principales */
+.container {
+  text-align: center;
+}
+
+/* Estilos para los divs internos */
+.inner {
+  display: inline-block;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* Estilos para el div izquierdo */
+.yellow-bg {
+  background-color: rgba(248, 255, 39, 0.6); /* Fondo amarillo */
+  width: 20%;
+}
+
+/* Estilos para el div derecho */
+.gray-bg {
+  background-color: rgb(92, 91, 91); /* Fondo gris */
+  color: white;
+}
+
+/* Estilos para el enlace */
+.inner a {
+  color: rgb(242, 255, 0);
+  text-decoration: none;
+}
+
+/* Estilos para el enlace al pasar el ratón */
+.inner a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el texto dentro de los divs internos */
+.inner p {
+  margin: 30;
+  padding: 20px;
+}
+
+/* Estilos para el texto del enlace */
+.inner a {
+  display: block;
+  margin-top: 10px;
+}
+
+#volver2 {
+  padding: 10px;
+  background-color: #0077B5;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  border-color: rgba(39, 107, 255, 0.6);
+}
+
+/*INICIO*/
+#inicio {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(249, 250, 249);
+  -webkit-text-stroke: 1px rgb(71, 70, 70);
+}
+
+dialog::backdrop {
+  background-color: rgba(250, 235, 215, 0.681);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  background-color: rgb(67, 178, 182);
+  color: black;
+  padding: 20px 35px;
+  margin: 30px 0 20px 0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0px 0px 0 rgba(255, 255, 255, 0.7098039216);
+}
+
+button:hover {
+  box-shadow: 8px 8px 0 #fff;
+}
+
+#contenedor {
+  padding: 60px;
+}
+
+.contenedor2 {
+  margin-bottom: 30px;
+  border: 2px solid #0077B5;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contenedor2 {
+  text-align: center;
+}
+
+#contenedor2 img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+#contenedor2 h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#contenedor2 p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#linkedin-button {
+  display: inline-block;
+  background-color: #0077B5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#linkedin-button:hover {
+  background-color: #005580;
+}
+
+/* Media query para pantallas móviles */
+@media only screen and (max-width: 767px) {
+  #contenedor2 {
+    display: flex;
+    flex-direction: column;
+  }
+  #contenedor2 .text-container {
+    text-align: center;
+    padding: 20px;
+  }
+  #contenedor2 {
+    padding: 40px;
+  }
+}/*# sourceMappingURL=cv2.css.map */
